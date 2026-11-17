@@ -1,0 +1,19 @@
+---
+description: Mantener tipografía y espaciado del Panel ISINUTA en todo el sistema (ambos roles)
+alwaysApply: true
+---
+
+# Escala visual ISINUTA
+
+La interfaz de referencia es el **Panel (Dashboard)**: tamaño de letra, paddings, gaps y cards como en esa pantalla.
+
+## Reglas
+
+- **Misma escala para Presidente y Secretaria** (y demás roles). No crear layouts o zooms distintos por rol.
+- El área de trabajo usa `.isinuta-content-compact` (`zoom: 0.85` en `resources/css/app.css`). **No cambiar** ese valor ni quitar la clase del layout sin alinear todo el sistema.
+- El menú lateral **no** lleva zoom; conserva su tamaño.
+- Listados: usar clases de `resources/js/lib/pageStyles.ts` (`pageShellClass`, `pageTitleClass`, etc.).
+- Formularios: `FormPageShell` + `formStyles.ts`.
+- Tipografía de páginas: títulos `text-xl sm:text-2xl`, subtítulos `text-sm`, cuerpo `text-sm`, labels KPI `text-[11px]` uppercase.
+- Contenedor: `px-3 sm:px-6`, `gap-3 sm:gap-4`, cards `rounded-2xl` / `p-4`, fondo de área `#eef1f6`.
+- Evitar paddings sueltos tipo `md:p-6` / `gap-5` / `text-3xl` en títulos de página que rompan la escala del Panel.

@@ -1,0 +1,553 @@
+TOTAL yellow paras/spans: 179
+
+--- para 0 ---
+YELLOW: OBSERVACIONES DEL TUTOR – SEGUNDA REVISIÓN
+
+--- para 1 ---
+YELLOW: Proyecto de grado: Sistema web para la gestión administrativa de la Asociación de Agua Potable y Alcantarillado Isinuta
+
+--- para 2 ---
+YELLOW: Postulante: Javier Mercado Huerta     Tutor: Ing. Grover Ramírez Zelada
+
+--- para 3 ---
+YELLOW: Fecha de revisión: 08/11/2026 (versión «PROYECTO MERCADO -F»)
+
+--- para 4 ---
+YELLOW: Cómo leer esta revisión
+
+--- para 5 ---
+YELLOW: – Todo lo resaltado en amarillo corresponde a la revisión del tutor.
+
+--- para 6 ---
+YELLOW: – El texto resaltado dentro de un párrafo ya fue corregido por el tutor (errores de redacción, citas o datos): revisarlo y quitar el resaltado.
+
+--- para 7 ---
+YELLOW: – Los párrafos que empiezan con «Observación del tutor:» indican lo que el postulante debe corregir o completar; eliminarlos una vez atendidos.
+
+--- para 8 ---
+YELLOW: – Esta revisión no repite lo que ya se corrigió: compara esta versión con la revisión del 06/11/2026 e indica qué quedó atendido y qué sigue pendiente.
+
+--- para 9 ---
+YELLOW: – Eliminar estas páginas antes de la presentación final.
+
+--- para 10 ---
+YELLOW: Avance respecto a la revisión anterior (06/11/2026)
+
+--- para 11 ---
+YELLOW: Se reconoce el avance: el resumen ahora tiene 188 palabras y presenta resultados, se unificó el inicio de sesión con correo o CI, se corrigieron los días de las historias y de los Sprint Backlog 3 y 4, y se actualizaron varias capturas. El estado de cada observación anterior es el siguiente:
+
+--- para 12 ---
+YELLOW: Observación de la revisión anterior
+
+--- para 13 ---
+YELLOW: Estado
+
+--- para 14 ---
+YELLOW: Comentario
+
+--- para 15 ---
+YELLOW: Resumen (máximo 200 palabras, sin abreviaturas, con resultados)
+
+--- para 16 ---
+YELLOW: Atendida
+
+--- para 17 ---
+YELLOW: 188 palabras; 22 pruebas, coincide con las tablas 14, 16, 18 y 20.
+
+--- para 18 ---
+YELLOW: Justificación de máximo una página
+
+--- para 19 ---
+YELLOW: Pendiente
+
+--- para 20 ---
+YELLOW: Sigue ocupando cerca de dos páginas y media.
+
+--- para 21 ---
+YELLOW: Enfoque metodológico: citas de Lozada y Hernández Sampieri; datos de la entrevista
+
+--- para 22 ---
+YELLOW: Parcial
+
+--- para 23 ---
+YELLOW: Se agregaron las citas, pero no están en la bibliografía; el ANEXO 1 sigue sin fecha ni entrevistado.
+
+--- para 24 ---
+YELLOW: Proyectos relacionados en APA 7 y relación con el proyecto
+
+--- para 25 ---
+YELLOW: Parcial
+
+--- para 26 ---
+YELLOW: Quispe Chipa y Paco Tamo corregidos; Solarez Chico no (corregido en esta revisión). Falta la relación con el proyecto.
+
+--- para 27 ---
+YELLOW: Definición.de como fuente
+
+--- para 28 ---
+YELLOW: Parcial
+
+--- para 29 ---
+YELLOW: Se agregó a la bibliografía, pero conserva «p. 16».
+
+--- para 30 ---
+YELLOW: Citas de la Guía de Scrum y de UML
+
+--- para 31 ---
+YELLOW: Parcial
+
+--- para 32 ---
+YELLOW: La definición de Scrum ya es paráfrasis; roles, eventos y artefactos siguen entre comillas sin página.
+
+--- para 33 ---
+YELLOW: Figuras del Capítulo II (Enterprise Architect, Laravel, logotipos, Vue.js)
+
+--- para 34 ---
+YELLOW: Pendiente
+
+--- para 35 ---
+YELLOW: Ninguna de las cinco figuras observadas cambió.
+
+--- para 36 ---
+YELLOW: Fuentes dudosas o sin registro del Capítulo II
+
+--- para 37 ---
+YELLOW: Pendiente
+
+--- para 38 ---
+YELLOW: Codd, Larman, You, Ramakrishnan, Nguyen, Gundersen y Sommerhoff siguen igual.
+
+--- para 39 ---
+YELLOW: Product Owner representado por la asociación
+
+--- para 40 ---
+YELLOW: Pendiente
+
+--- para 41 ---
+YELLOW: Ahora el postulante es Product Owner y Developer a la vez.
+
+--- para 42 ---
+YELLOW: Roles Cajera, Consulta y Operador en el sistema
+
+--- para 43 ---
+YELLOW: Pendiente
+
+--- para 44 ---
+YELLOW: Siguen en las capturas de usuarios y roles.
+
+--- para 45 ---
+YELLOW: Inicio de sesión con correo o CI (HU-02, Sprint Backlog)
+
+--- para 46 ---
+YELLOW: Atendida
+
+--- para 47 ---
+YELLOW: Falta cambiar la etiqueta «Correo» de la pantalla de inicio (Figura 15).
+
+--- para 48 ---
+YELLOW: HU-08: celda «Gestionar / Pagos»
+
+--- para 49 ---
+YELLOW: Pendiente
+
+--- para 50 ---
+YELLOW: Sigue dividida en dos párrafos.
+
+--- para 51 ---
+YELLOW: Días de HU-05 y HU-06
+
+--- para 52 ---
+YELLOW: Atendida
+
+--- para 53 ---
+YELLOW: S = 4 y XL = 10; total 68 días.
+
+--- para 54 ---
+YELLOW: Diagrama de componentes (DomPDF/Snappy, Laravel Auth, nota)
+
+--- para 55 ---
+YELLOW: Pendiente
+
+--- para 56 ---
+YELLOW: Sin cambios.
+
+--- para 57 ---
+YELLOW: Errores de escritura en los diagramas de casos de uso
+
+--- para 58 ---
+YELLOW: Pendiente
+
+--- para 59 ---
+YELLOW: Siguen en los Sprint 1, 2 y 3.
+
+--- para 60 ---
+YELLOW: Diagramas de clases de los Sprint 1, 2, 3 y 4
+
+--- para 61 ---
+YELLOW: Parcial
+
+--- para 62 ---
+YELLOW: Se agregó montoPlazo, se quitaron anular() y consultarRecargos() y se corrigió imprimir(); el resto sigue igual.
+
+--- para 63 ---
+YELLOW: Capturas con datos de prueba (usuarios, roles, OTB «Centro Isinuta»)
+
+--- para 64 ---
+YELLOW: Pendiente
+
+--- para 65 ---
+YELLOW: Se volvieron a tomar, pero siguen con datos de prueba.
+
+--- para 66 ---
+YELLOW: Montos de la Figura 20
+
+--- para 67 ---
+YELLOW: Atendida
+
+--- para 68 ---
+YELLOW: Muestra Bs 2.000 / Bs 2.500.
+
+--- para 69 ---
+YELLOW: Secuencia de los casos de prueba del Sprint 1
+
+--- para 70 ---
+YELLOW: Pendiente
+
+--- para 71 ---
+YELLOW: Los casos 2, 3 y 4 siguen siendo incoherentes.
+
+--- para 72 ---
+YELLOW: Tareas de HU-09 y HU-10
+
+--- para 73 ---
+YELLOW: Atendida
+
+--- para 74 ---
+YELLOW: Suman 10 días cada una. Quedan líneas vacías en la primera celda.
+
+--- para 75 ---
+YELLOW: Figura 31 repetida y Figura 32 desactualizada
+
+--- para 76 ---
+YELLOW: Atendida
+
+--- para 77 ---
+YELLOW: Ahora son capturas distintas y actuales (ver la nota de la Figura 32).
+
+--- para 78 ---
+YELLOW: Figura 33 sin título y desactualizada
+
+--- para 79 ---
+YELLOW: Atendida
+
+--- para 81 ---
+YELLOW: Diagrama de casos de uso del Sprint 4 (recargos, imprimir)
+
+--- para 82 ---
+YELLOW: Atendida
+
+--- para 83 ---
+YELLOW: Coincide con la HU-10.
+
+--- para 84 ---
+YELLOW: Apartados 3.7 Pruebas realizadas y 3.8 Análisis de resultados
+
+--- para 85 ---
+YELLOW: Pendiente
+
+--- para 86 ---
+YELLOW: Se eliminaron del documento; la guía los exige y la Introducción todavía los menciona.
+
+--- para 87 ---
+YELLOW: Prueba de aceptación con los usuarios finales
+
+--- para 88 ---
+YELLOW: Pendiente
+
+--- para 90 ---
+YELLOW: Bibliografía (fuentes citadas y no citadas)
+
+--- para 91 ---
+YELLOW: Pendiente
+
+--- para 92 ---
+YELLOW: Ver la observación al final de la BIBLIOGRAFÍA.
+
+--- para 93 ---
+YELLOW: Anexos: formato, citas en el texto y fecha de la entrevista
+
+--- para 94 ---
+YELLOW: Parcial
+
+--- para 95 ---
+YELLOW: Se renumeraron del 1 al 6; falta el formato «ANEXO N: Descripción», citarlos y completar el ANEXO 1.
+
+--- para 97 ---
+YELLOW: Observaciones generales de esta revisión
+
+--- para 98 ---
+YELLOW: – Estructura (prioridad alta): el Capítulo III debe terminar con los apartados «Pruebas realizadas» y «Análisis de resultados», que exige la guía. En esta versión se eliminaron, aunque la Introducción todavía dice que el Capítulo III los incluye. Reponerlos como 3.7 y 3.8 con datos reales (ver la observación al final del Sprint 4).
+
+--- para 99 ---
+YELLOW: – Coherencia entre documento y sistema: varias capturas y diagramas siguen sin coincidir con lo que dicen las historias de usuario y las notas (roles no documentados, datos de prueba, diagrama de componentes, Figura 28 vacía). Cada caso está marcado en su lugar.
+
+--- para 100 ---
+YELLOW: – Tiempo verbal: redactar en tercera persona y en tiempo pasado. Siguen en presente, por ejemplo, la justificación social («permite reducir»), la conclusión general («La solución mejora») y las notas de las figuras.
+
+--- para 101 ---
+YELLOW: – Formato: los párrafos de introducción de 3.5.2.3 y 3.6.3 quedaron en otra fuente (Calibri) y sin interlineado 1,5; aplicar el estilo Normal (Arial 11, interlineado 1,5, justificado). Usar coma decimal en todas las tablas.
+
+--- para 102 ---
+YELLOW: – Índices: el índice de figuras muestra «¡Error! Marcador no definido.» en la Figura 2 y títulos antiguos; el orden de la guía es contenidos, tablas y figuras. Al terminar, actualizar los tres índices (clic derecho > Actualizar campo > Actualizar toda la tabla) y escribir «ÍNDICE» con tilde.
+
+--- para 103 ---
+YELLOW: – Títulos con tilde: «MARCO TEÓRICO» y «PROPUESTA DE INNOVACIÓN O SOLUCIÓN DEL PROBLEMA» deben llevar tilde en el título del capítulo y en el índice; además, la portadilla dice «MARCO TEÓRICO CONCEPTUAL» y el título dice «MARCO TEORICO»: unificar.
+
+--- para 104 ---
+YELLOW: – Datos personales: las capturas de afiliados, pagos, multas y reportes, y los anexos 2, 3 y 5, muestran nombres, CI y deudas que parecen de afiliados reales. Como el documento será público, usar datos de prueba o difuminarlos.
+
+--- para 105 ---
+YELLOW: – Extensión: los capítulos I a IV ocupan cerca de 80 páginas, el máximo de la guía. Para reponer 3.7 y 3.8, resumir la Justificación, quitar las figuras de logotipos y las frases de relleno del Capítulo II.
+
+--- para 290 ---
+YELLOW: Observación del tutor: la Figura 2 muestra «¡Error! Marcador no definido.» y los títulos de las figuras 2 y 3 no coinciden con los del texto: el índice está desactualizado. Según la guía, el ÍNDICE DE TABLAS va antes que el ÍNDICE DE FIGURAS. Mover este índice después del de tablas y actualizar los tres índices al terminar las correcciones.
+
+--- para 364 ---
+YELLOW: Observación del tutor: este párrafo dice que el Capítulo III incluye «las pruebas realizadas y el análisis de resultados», pero esos apartados se eliminaron en esta versión. Reponer 3.7 y 3.8 (recomendado, porque la guía los exige) o ajustar este párrafo.
+
+--- para 372 ---
+YELLOW: Se encontraba organizada
+FULL:  Se encontraba organizada mediante una mesa directiva encargada de la toma de decisiones y la supervisión del funcionamiento de los servicios ofrecidos a los afiliados. Dicha directiva se renueva cada dos años, lo que promueve la participación activa de los miembros de la comunidad en la gestión institucional.
+
+--- para 376 ---
+YELLOW: esa multa se acumulaba en al cumplirse un año (12 meses vencidos)
+FULL:  A partir de la afiliación, cada lote pagaba el servicio mensual de agua potable y el de alcantarillado según la categoría del inmueble. En Domiciliar el agua es Bs. 8 y el alcantarillado es Bs. 15. En Comercial el agua es Bs. 17 y el alcantarillado es Bs. 20. Si ese cobro mensual se atrasaba, se aplicaba una multa trimestral de Bs. 50 al cumplirse tres meses sin pagar; esa multa se acumulaba en Bs
+
+--- para 381 ---
+YELLOW: Observación del tutor: el diagnóstico sigue sin datos cuantitativos (observación pendiente de la revisión anterior). Agregar el número de afiliados, lotes y OTB o sindicatos (el sistema registra alrededor de 525 afiliados y 558 lotes en 11 OTB; verificar con el registro oficial), el personal administrativo, la cantidad de cobros por mes y el tiempo promedio de atención o de elaboración de un informe. Nombrar el sistema de escritorio (SISCOCAP, ANEXO 6) y remitir a los anexos que respaldan el diagnóstico, por ejemplo: «(ver ANEXO 1)» para la entrevista y «(ver ANEXO 2 y ANEXO 3)» para los reportes.
+
+--- para 399 ---
+YELLOW: Observación del tutor: la Justificación sigue ocupando cerca de dos páginas y media; la guía permite un máximo de una página. Reducir cada justificación a un solo párrafo de cuatro o cinco líneas. Además, unificar el tiempo verbal: se mezclan el pasado («se justificó», «tuvo») con el presente («permite reducir», «mejora», «son»).
+
+--- para 415 ---
+YELLOW: Observación del tutor: un objetivo específico debe expresar un resultado, no una aclaración de diseño. Quitar la última oración («Las categorías del inmueble se administran como una función dentro del módulo de servicios…»); ese detalle ya está en la HU-06.
+
+--- para 423 ---
+YELLOW: Observación del tutor: indicar a quién se entrevistó (cargo y número de personas), en qué fecha y con qué instrumento, y citar el anexo: «(ver ANEXO 1)». El ANEXO 1 sigue con la fecha en blanco y el entrevistado como «Personal administrativo». Lozada (2014) y Hernández Sampieri et al. (2014) ya se citan, pero no figuran en la bibliografía: agregarlos.
+
+--- para 440 ---
+YELLOW: Solarez Chico (2023) realizó la tesis titulada Sistema web para la administración de información y control de la recaudación de recursos del suministro de agua potable, en la que concluyó que
+FULL:  Solarez Chico (2023) realizó la tesis titulada Sistema web para la administración de información y control de la recaudación de recursos del suministro de agua potable, en la que concluyó que el sistema web desarrollado para la administración y control de la recaudación del suministro de agua potable permitió optimizar los procesos administrativos, automatizando el registro, control y almacenamien
+
+--- para 442 ---
+YELLOW: Observación del tutor: escribir en cursiva los títulos de las tres tesis (APA 7). Falta explicar la relación de cada trabajo con el presente proyecto: qué aspecto se tomó como referencia y en qué se diferencia este sistema (por ejemplo, el pase de lista por OTB con multa por lote, la multa por mora acumulable, la transferencia de lotes sin deudas o los reportes por concepto). Basta un párrafo de cierre después de los tres antecedentes.
+
+--- para 447 ---
+YELLOW: Según Definición.de (2023),organizada”. En la actualidad
+FULL:  Según Definición.de (2023), “una asociación es un grupo de personas que se organizan de manera voluntaria con el fin de alcanzar objetivos comunes, estableciendo normas internas, derechos y obligaciones que regulan la participación de sus miembros dentro de una estructura formal y organizada”. En la actualidad, las asociaciones permiten la integración de individuos con intereses similares en difer
+
+--- para 448 ---
+YELLOW: Observación del tutor: se quitó «(p. 16)», porque un sitio web no tiene páginas. Definición.de es un sitio de divulgación; se recomienda reemplazarla por un libro o artículo sobre asociaciones civiles.
+
+--- para 451 ---
+YELLOW: 2021, p. 15
+FULL:  La gestión de cobros comprende labores administrativas y financieras orientadas a dirigir y obtener recursos monetarios provenientes de transacciones económicas o mercantiles, permitiendo mantener el flujo de efectivo, prevenir posibles incumplimientos de pago y garantizar una adecuada estabilidad financiera dentro de las organizaciones (Solórzano Trejo,  2021, p. 15).
+
+--- para 454 ---
+YELLOW: Vanegas Calderón et al. (2022) mencionan
+FULL:  Vanegas Calderón et al. (2022) mencionan que “es el término utilizado para denominar al individuo que está registrado o inscrito en una institución, ya sea una organización gremial, política, entidad u otro tipo; adquiriendo de esta manera responsabilidades, derechos y obligaciones normadas dentro de la estructura institucional” (p. 36). En el contexto del presente proyecto, la afiliación correspo
+
+--- para 465 ---
+YELLOW: Universidad de Piura, 2010, p. 15
+FULL:  Los servicios de saneamiento básico comprenden el agua potable y el alcantarillado u otras formas de desagüe, entendidos como infraestructuras y mecanismos que permiten a las personas vivir en un ambiente sano mediante el acceso a agua limpia y a la evacuación segura de excretas (Universidad de Piura, 2010, p. 15).
+
+--- para 475 ---
+YELLOW: Observación del tutor: las citas de Macías Basurto (2020) y de la Universidad Autónoma Metropolitana (UAM, 2020) no coinciden con la bibliografía, donde figuran como «Basurto, N. M.» y «Universidad Autónoma Metropolitana». El apellido que se cita debe ser el mismo con el que empieza la entrada de la bibliografía.
+
+--- para 479 ---
+YELLOW: 2023, p. 20
+FULL:  La metodología constituye un conjunto organizado de métodos, técnicas y procedimientos que orientan el desarrollo sistemático de actividades investigativas o proyectos, permitiendo planificar, ejecutar y controlar cada etapa para alcanzar objetivos específicos con eficiencia, orden y resultados confiables, dentro de cualquier ámbito profesional (Maldonado Reyes & Álvarez Ochoa, 2023, p. 20).
+
+--- para 483 ---
+YELLOW: 2006, p. 7
+FULL:  Las metodologías ágiles son enfoques de desarrollo de software que promueven la colaboración continua entre equipos, la adaptación rápida a los cambios, la entrega frecuente de funcionalidades y la participación activa del cliente durante todo el proceso de desarrollo del sistema informático (Letelier & Penadés, 2006, p. 7).
+
+--- para 495 ---
+YELLOW: Schwaber y Sutherland (2020) mencionan que
+FULL:  Schwaber y Sutherland (2020) mencionan que “Scrum está compuesto por tres roles: Product Owner, Scrum Master y Developers, quienes trabajan de forma colaborativa para maximizar el valor del producto, organizar el trabajo y aplicar correctamente el marco ágil en proyectos complejos de desarrollo de software eficiente”. Los roles de Scrum permiten una estructura clara en el equipo, donde el Product 
+
+--- para 497 ---
+YELLOW: Schwaber y Sutherland (2020) mencionan que “Scrum define eventos como Sprint, Sprint Planning, Daily Scrum, Sprint Review y Sprint Retrospective, los cuales permiten inspección y adaptación continua del trabajo, promoviendo la transparencia, coordinación del equipo y mejora constante del proceso ágil de desarrollo de software eficiente.” Los eventos de Scrum estructuran el trabajo en ciclos iterativos, facilitando la planificación, seguimiento y revisión constante del progreso. Estos fomentan la transparencia, la inspección continua y la adaptación, mejorando la comunicación del equipo y la eficiencia en proyectos ágiles de software.
+
+--- para 499 ---
+YELLOW: Schwaber y Sutherland (2020) mencionan que “Los artefactos
+FULL:  Schwaber y Sutherland (2020) mencionan que “Los artefactos de Scrum incluyen Product Backlog, Sprint Backlog e Incremento, los cuales representan el trabajo, las prioridades y el resultado del equipo, asegurando transparencia, claridad, control, organización, enfoque y mejora continua en la entrega de valor del producto desarrollado”. Los artefactos de Scrum facilitan la organización y seguimiento
+
+--- para 500 ---
+YELLOW: Observación del tutor: las citas de roles, eventos y artefactos siguen entre comillas, pero no son textuales de la Guía de Scrum (2020): son paráfrasis. Quitar las comillas o copiar el texto literal con su número de página. La Guía 2020 no habla de «roles» sino de las responsabilidades del Scrum Team (Product Owner, Scrum Master y Developers); se sugiere titular 2.3.3.1 como «Responsabilidades del equipo Scrum».
+
+--- para 502 ---
+YELLOW: Jiménez de Parga et al. (2024) mencionan que “el modelado
+FULL:  Jiménez de Parga et al. (2024) mencionan que “el modelado UML es una técnica de representación visual que permite analizar, diseñar y documentar sistemas de software mediante diagramas estructurados, facilitando la comprensión, organización, comunicación y desarrollo de soluciones informáticas complejas dentro del proceso y  la  ingeniería de software”. El modelado UML es una herramienta fundament
+
+--- para 503 ---
+YELLOW: Observación del tutor: esta cita textual no tiene número de página; agregarlo, por ejemplo: «(p. 25)», según el libro.
+
+--- para 532 ---
+YELLOW: Observación del tutor: la nota sigue diciendo «Elaboración propia» y, a la vez, «Extraído de» un enlace de YouTube; si la imagen se tomó de internet no es elaboración propia. Reemplazarla por un diagrama propio del proyecto hecho en Enterprise Architect (por ejemplo, una captura del diagrama de clases del Sprint 1 abierto en la herramienta).
+
+--- para 547 ---
+YELLOW: Observación del tutor: la fuente sigue incompleta («https://blogger.googleusercontent.com/img/b/»): colocar el enlace completo o el autor y el año de la fuente.
+
+--- para 556 ---
+YELLOW: Observación del tutor: esta observación sigue pendiente: un logotipo no aporta información técnica. Reemplazar la figura por un esquema propio del funcionamiento de Inertia.js (petición del navegador → controlador de Laravel → página de Vue) o eliminarla. Lo mismo aplica a la Figura 11 (logotipo de MySQL).
+
+--- para 560 ---
+YELLOW: Observación del tutor: la figura sigue dentro del apartado Inertia.js; moverla a 2.5.5 Framework Vue.js. La imagen es de la documentación de Vue 0.12 (012.vuejs.org); usar una figura de Vue 3, que es la versión utilizada en el proyecto.
+
+--- para 574 ---
+YELLOW: Asimismo, Coronel y Morris
+FULL:  Asimismo, Coronel y Morris (2022) señalan que su importancia radica en que “permite transformar los datos dispersos en información valiosa y estructurada, sirviendo como la base para la toma de decisiones estratégicas dentro de una organización” (p. 14). De esta manera, la base de datos constituye el núcleo de la aplicación, al centralizar la información en un único punto de acceso.
+
+--- para 590 ---
+YELLOW: Observación del tutor: las fuentes del Capítulo II observadas en la revisión anterior siguen sin cambios: Codd (2020), Larman (2022), You (2020) y Ramakrishnan y Gehrke (2021) tienen el autor o el año incorrectos (Codd publicó su modelo en 1970 y falleció en 2003), y no se encontró registro de Nguyen (2021), Gundersen (2022) ni Sommerhoff (2021). Reemplazarlas por fuentes verificables, como la documentación oficial de Laragon, Vue.js y Visual Studio Code (sin número de página). Thomas (2023) e Inertia.js Development Team (2024) se citan, pero no están en la bibliografía.
+
+--- para 594 ---
+YELLOW: Observación del tutor: la fuente es un enlace temporal de Google Imágenes (encrypted-tbn0.gstatic.com), que no es una fuente válida. Eliminar la figura (ver la observación de la Figura 7).
+
+--- para 604 ---
+YELLOW: Observación del tutor: en Scrum, el Product Owner representa al cliente y prioriza los requerimientos; no se recomienda que la misma persona sea Product Owner y Developer. Se sugiere que el Product Owner sea el presidente de la Asociación (o la persona que la directiva designe) y que el postulante sea el Developer. Si se mantiene esta organización, justificar por qué el postulante asumió ambos roles.
+
+--- para 609 ---
+YELLOW: Observación del tutor: el sistema tiene además los roles Cajera, Consulta pagos y multas, Operador y Otro, que aparecen en las figuras 16, 17 y 18. Describirlos aquí o quitarlos del sistema y volver a tomar las capturas. Falta el punto final del párrafo.
+
+--- para 616 ---
+YELLOW: Tiempo (Días)
+
+--- para 763 ---
+YELLOW: Mostrar un mensaje de confirmación al registrar, actualizar o cambiar el estado de una OTB.
+
+--- para 856 ---
+YELLOW: Observación del tutor: en la celda «Nombre de historia», «Gestionar» y «Pagos» siguen en párrafos separados; unirlos en «Gestionar Pagos».
+
+--- para 944 ---
+YELLOW: Gestionar Servicios por categoría
+
+--- para 975 ---
+YELLOW: Observación del tutor: el diagrama sigue mostrando «DomPDF / Snappy – Generación de reportes PDF», pero la aplicación no usa esas librerías: el PDF se obtiene con la impresión del navegador y el Excel con PhpSpreadsheet. La autenticación se hace con Laravel Fortify y permisos por rol, no con «Laravel Auth (Roles)». Corregir el diagrama y completar la nota, por ejemplo: «El diagrama muestra los componentes de la aplicación (vistas Vue, rutas, controladores, servicios y modelos) y sus dependencias con Inertia.js, Tailwind CSS y MySQL».
+
+--- para 1081 ---
+YELLOW: Observación del tutor: siguen los errores en el diagrama: «Actualisar Estado» debe ser «Actualizar estado» y «Gestiona_lotes» debe ser «Gestionar lotes».
+
+--- para 1087 ---
+YELLOW: Observación del tutor: TipoAfiliacion ya tiene monto y montoPlazo, pero con tipos distintos (double e int): usar decimal en ambos. Siguen pendientes: Usuario no tiene CI ni fecha final (obligatorios en la HU-02); el teléfono de Usuario es int y debe ser String por el código de país; en Afiliado, ci es int (un CI puede tener complemento, por ejemplo 1234567-1B); en LoteAfiliado, monto_afiliacion es boolean y debe ser decimal. Unificar el estilo de los nombres (fecha_ingreso y cambiar_estado frente a cambiarEstado).
+
+--- para 1093 ---
+YELLOW: Observación del tutor: la pantalla sigue con la etiqueta «Correo» y el texto «Ingrese su correo y contraseña», aunque la HU-02 dice «correo electrónico o CI». Cambiar la etiqueta a «Correo o CI» en el sistema y volver a tomar la captura.
+
+--- para 1097 ---
+YELLOW: Observación del tutor: la captura sigue titulada «Nuevo usuario de consulta» y con el rol Cajera seleccionado. Volver a tomarla registrando a la secretaria, con datos coherentes con la Tabla 14.
+
+--- para 1104 ---
+YELLOW: Observación del tutor: las figuras 17 y 18 se actualizaron, pero siguen con datos de prueba: usuarios «poll mendes», «Goku Son» y «javier m», y un rol «Otro» con la descripción «etc». También aparecen los roles Cajera, Operador y Consulta pagos y multas, que no se documentan. Depurar los datos y volver a tomar las capturas.
+
+--- para 1199 ---
+YELLOW: Observación del tutor: la secuencia de los casos de prueba sigue siendo incoherente: en el caso 2 el usuario cambia su correo a secretaria@isinuta.com y queda Inactivo, pero en el caso 4 se inicia sesión con carlos.admin@isinuta.com, que ya no existe y además está inactivo. En el caso 3 se registra el rol «secretaria», que ya existía porque se asignó en el caso 1; con el control de duplicidad de la HU-01, el sistema debería rechazarlo. Sugerencia: registrar el rol en el caso 1, el usuario en el caso 2, iniciar sesión en el caso 3 y editar el usuario en el caso 4. Las notas de las tablas 14, 16, 18 y 20 repiten la misma frase; describir qué se comprobó en cada Sprint.
+
+--- para 1266 ---
+YELLOW: 14 días
+FULL:  TOTAL SPRINT 2                                                  14 días
+
+--- para 1274 ---
+YELLOW: Observación del tutor: sigue el error «Actualizar tarifas de serivicos por categorias»: corregir por «Actualizar tarifas de servicios por categoría».
+
+--- para 1281 ---
+YELLOW: Observación del tutor: sin cambios respecto a la revisión anterior: en Servicio, id es String y nombre es int (los tipos están invertidos); costoContado y costoPlazos son montos de afiliación, que pertenecen a TipoAfiliacion, no a Servicio. En Categoria, corregir «desripcion». La clase Otb sigue sin relaciones: una OTB agrupa los lotes de los afiliados (relación con LoteAfiliado).
+
+--- para 1294 ---
+YELLOW: Observación del tutor: la lista sigue mostrando la OTB «Centro Isinuta» con la descripción «Zona central de prueba», que es un dato de prueba. Eliminarla del sistema y volver a tomar la captura. Además, la tabla del sistema muestra 11 OTB: verificar que todas sean OTB o sindicatos reales.
+
+--- para 1339 ---
+YELLOW: Observación del tutor: la definición de hecho es una sola oración de más de 150 palabras, difícil de verificar. Presentarla como lista de viñetas, una por funcionalidad, como en los demás Sprint.
+
+--- para 1375 ---
+YELLOW: 0,5
+
+--- para 1452 ---
+YELLOW: Observación del tutor: las tareas suman 26 días (HU-07: 6, HU-08: 10, HU-09: 10) y coinciden con el Product Backlog. Agregar la fila «TOTAL SPRINT 3: 26 días», como en los Sprint 1 y 2, y borrar las líneas vacías que quedaron en la primera celda de la HU-09.
+
+--- para 1458 ---
+YELLOW: Observación del tutor: se quitó «Anular Multa», pero siguen los errores «Rgistrar», «Gestiona Trabajos», «Regsitar Pago» y «Expotar Recibo». «Consultar Estado de Cuenta» sigue incluido en Gestionar multas, pero corresponde a Gestionar pagos (HU-08). Falta el caso de uso «Transferir lote», que está en la HU-08 y en la Tabla 18.
+
+--- para 1464 ---
+YELLOW: Observación del tutor: se quitó anular(), pero siguen pendientes: «motoMulta» por «montoMulta» y «decripcion» por «descripcion»; PagoDetalle tiene cuotaId(FK) sin la clase Cuota; los montos son int y deben ser decimales; el estado de Multa y de Pago es boolean, aunque toma valores como pendiente, pagada o anulada; y faltan las relaciones de Multa y Pago con LoteAfiliado, de Asistencia con Afiliado y de Trabajo con Otb. Escribir la clase en singular («Asistencia»). El párrafo anterior quedó en otra fuente: aplicar el estilo Normal.
+
+--- para 1471 ---
+YELLOW: Observación del tutor: la captura muestra la pantalla «Cobrar» vacía, sin ningún lote seleccionado, por lo que no se ve la multa por mora que describe la nota. Volver a tomarla después de seleccionar un lote con la multa por mora pendiente.
+
+--- para 1488 ---
+YELLOW: Observación del tutor: la captura muestra un «Recibo de caja» por «Pago de alcantarillado Domiciliar», mientras que la nota dice «Recibo de ingreso» y la Definición de hecho del Sprint 3 indica que el agua y el alcantarillado se cobran con recibo de ingreso y las multas y la afiliación con recibo de caja. Aclarar en el documento qué tipo de recibo corresponde a cada concepto y que coincida con el sistema. Además, en la Figura 31 el lote figura «Cortado por mora anual» con solo 2 meses sin pagar: verificar el dato o explicar el caso.
+
+--- para 1497 ---
+YELLOW: Observación del tutor: la Tabla 18 incluye la prueba de transferencia de lote, pero no hay captura de esa función ni del historial de titulares. Agregarla, porque es uno de los cinco procesos automatizados que se mencionan en el resumen.
+
+--- para 1608 ---
+YELLOW: Observación del tutor: las tareas suman 10 días y coinciden con el Product Backlog. Agregar la fila «TOTAL SPRINT 4: 10 días» y borrar las líneas vacías que quedaron en la primera celda.
+
+--- para 1621 ---
+YELLOW: Observación del tutor: se corrigió «imprimir()» y se quitó consultarRecargos(), pero el diagrama sigue con una sola clase. Agregar las clases de las que se obtienen los reportes (Pago, PagoDetalle, Multa, Afiliado y LoteAfiliado) con sus relaciones con ReporteAdministrativo. El párrafo de 3.6.3 quedó en otra fuente: aplicar el estilo Normal.
+
+--- para 1692 ---
+YELLOW: Observación del tutor: aquí deben ir los apartados 3.7 Pruebas realizadas y 3.8 Análisis de resultados, que exige la guía y que se eliminaron en esta versión (en la revisión anterior se entregó un borrador). Reponerlos con datos reales:
+
+--- para 1693 ---
+YELLOW: – 3.7 Pruebas realizadas: resumir las 22 pruebas de funcionamiento (Sprint 1: 6, Sprint 2: 3, Sprint 3: 7, Sprint 4: 6) en una tabla con el número de pruebas por módulo y su resultado, y agregar una prueba de aceptación con la secretaria y el presidente, con su conformidad firmada en un anexo.
+
+--- para 1694 ---
+YELLOW: – 3.8 Análisis de resultados: comparar el proceso anterior con el sistema (tiempo de registro de un afiliado, de un cobro con recibo, del pase de lista y de la elaboración de un reporte) en una tabla «antes / después» con mediciones reales, y relacionar cada resultado con su objetivo específico.
+
+--- para 1695 ---
+YELLOW: – Sin estos dos apartados no se puede verificar el objetivo general ni las conclusiones.
+
+--- para 1702 ---
+YELLOW: La solución mejoró la organización
+FULL:  Se desarrolló el sistema web para la gestión administrativa de la Asociación de Agua Potable y Alcantarillado Isinuta, permitiendo automatizar el control de afiliados, pagos, multas y reportes durante la gestión 2026. La solución mejoró la organización de los procesos administrativos mediante información confiable y disponible para la toma de decisiones de la mesa directiva.
+
+--- para 1707 ---
+YELLOW: Observación del tutor: las conclusiones repiten los objetivos con verbos en pasado, pero no muestran resultados. Cada conclusión debe responder a su objetivo con un dato verificable (por ejemplo: número de pruebas aprobadas del módulo, tiempo de cobro antes y después, o duplicidades evitadas), tomado del apartado 3.8.
+
+--- para 1801 ---
+YELLOW: Observación del tutor: según la guía, cada fuente citada debe figurar en la bibliografía y cada entrada de la bibliografía debe estar citada en el texto. Siguen pendientes:
+
+--- para 1802 ---
+YELLOW: – Agregar las fuentes citadas que faltan: Lozada (2014), Hernández Sampieri et al. (2014), Thomas (2023) e Inertia.js Development Team (2024).
+
+--- para 1803 ---
+YELLOW: – Quitar las entradas que no se citan en el texto, por ejemplo: Adam (2023), Ambler (2021), Bean (2022), Crockford (2022), Date (2021), Del Sole (2022), DuBois (2020), Duckett (2020), Flanagan (2020), Fowler (2020), Freeman (2023), Gasston y Cederholm (2022), Genero Bocco et al. (2014), Hanchett (2022), Haverbeke (2021), Hernandez (2020), IBM (2024), Laragon (2024), Lerdorf (2022), Lightstone et al. (2021), Marcotte (2020), Meloni (2022), Meyer (2021), Milani y West (2022), Oppel (2020), Packt (2023), phpMyAdmin Project (2024), Powers (2022), Prettyman (2023), Radcliffe (2023), Robbins (2021), Sajib (2023), Sharnoff (2021), Sommerville (2020), Stephens (2022), Ullman (2020), Valenzuela (2023) y Weisfeld (2022).
+
+--- para 1804 ---
+YELLOW: – Corregir «Basurto, N. M.» por «Macías Basurto, N.», que es como se cita en el texto; corregir «Universidad Continetal» por «Universidad Continental» y «Instituto Tecnologico» por «Instituto Tecnológico».
+
+--- para 1805 ---
+YELLOW: – En APA 7 ya no se escribe la ciudad de la editorial ni «Obtenido de»; los títulos de libros y tesis van en cursiva y en minúsculas (no en MAYÚSCULAS, como en Paco Tamo, Solarez Chico y Genero Bocco).
+
+--- para 1806 ---
+YELLOW: – Las entradas se generan desde el Administrador de fuentes de Word: corregirlas en Referencias > Administrar fuentes y luego actualizar la bibliografía.
+
+--- para 1827 ---
+YELLOW: Observación del tutor: los anexos ya tienen numeración correlativa (1 a 6). Falta:
+
+--- para 1828 ---
+YELLOW: – Usar el formato de la guía «ANEXO N: Descripción» (por ejemplo, «ANEXO 1: Entrevista al personal administrativo»).
+
+--- para 1829 ---
+YELLOW: – Completar la fecha y el cargo del entrevistado; la entrevista es la base del diagnóstico.
+
+--- para 1830 ---
+YELLOW: – Citar cada anexo en el texto donde corresponda (Diagnóstico y Enfoque metodológico).
+
+--- para 1831 ---
+YELLOW: – Difuminar los nombres, CI y montos de los afiliados en los anexos 2, 3 y 5.
+
+--- para 1832 ---
+YELLOW: – Agregar como anexo la conformidad firmada de la prueba de aceptación (ver la observación de 3.7).

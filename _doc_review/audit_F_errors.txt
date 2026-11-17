@@ -1,0 +1,33 @@
+Archivo: c:\Users\papu\Desktop\PROYECTO MERCADO -F.docx
+Párrafos: 1697
+Issues: 3
+Runs Calibri: 0
+Anexos: ['ANEXO 1: Entrevista al personal administrativo de la Asociación de Agua Potable y Alcantarillado Isinuta', 'ANEXO 2: Reporte detalle de pagos de afiliados (recaudación de cobros)', 'ANEXO 3: Reporte detalle de pagos de los afiliados', 'ANEXO 4: Recibo de egreso por cancelación de gastos', 'ANEXO 5: Archivo físico de documentos de afiliados por lote y OTB', 'ANEXO 6: Software SISCOCAP utilizado en la gestión administrativa']
+Checks: {'mora dia1': True, 'login CI residual': False, 'p.16 Definicion': False}
+
+=== TITULOS Cap (Ttulo1/2/3) ===
+258|Ttulo1|num=True|1      CAPÍTULO I: PLANTEAMIENTO DEL PROBLEMA
+317|Ttulo1|num=False|CAPÍTULO II: MARCO TEORICO
+470|Ttulo1|num=False|CAPÍTULO III: PROPUESTA DE INNOVACION O SOLUCION DEL PROBLEMA
+844|Ttulo2|num=False|Ejecución del Sprint 1
+847|Ttulo3|num=False|Sprint Backlog.
+974|Ttulo3|num=False|Sprint Review.
+1062|Ttulo2|num=False|Ejecución del Sprint 2
+1066|Ttulo3|num=False|Sprint Backlog.
+1153|Ttulo3|num=False|Sprint Review.
+1193|Ttulo2|num=False|Ejecución del Sprint 3
+1197|Ttulo3|num=False|Sprint Backlog.
+1347|Ttulo3|num=False|Sprint Review.
+1403|Ttulo2|num=False|Ejecución del Sprint 4
+1407|Ttulo3|num=False|Sprint Backlog.
+1480|Ttulo3|num=False|Sprint Review.
+1542|Ttulo1|num=False|CAPÍTULO IV: CONCLUSIONES Y RECOMENDACIONES
+1544|Ttulo2|num=False|Conclusiones.
+
+=== ISSUES ===
+[MEDIO] para=6 style= | Posible contenido ajeno/desactualizado: Instituto Tecnol[oó]gico Eterazama(?!.*Paco)
+    INSTITUTO TECNOLÓGICO ETERAZAMA
+[MEDIO] para=1052 style= | Posible contenido ajeno/desactualizado: Centro Isinuta
+    Dirección: Barrio Centro Isinuta
+[MEDIO] para=1163 style= | Posible contenido ajeno/desactualizado: Centro Isinuta
+    Nombre: Barrio 21 · Descripción: Barrio Centro Isinuta · Estado: Activa

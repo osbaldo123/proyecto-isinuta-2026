@@ -1,0 +1,1303 @@
+[IMG:media/image1.gif,media/image2.png]
+MINISTERIO DE EDUCACIÓN
+VICEMINISTERIO DE EDUCACIÓN SUPERIOR
+DIRECCIÓN GENERAL DE FORMACIÓN TÉCNICA TECNOLÓGICA LINGÜÍSTICA Y ARTÍSTICA
+INSTITUTO TECNOLÓGICO ETERAZAMA
+CARRERA SISTEMAS INFORMÁTICOS
+SISTEMA WEB PARA LA GESTIÓN ADMINISTRATIVA DE LA ASOCIACIÓN DE AGUA POTABLE Y ALCANTARILLADO ISINUTA
+PROYECTO DE GRADO PRESENTADO PARA OBTENER EL GRADO ACADÉMICO DE TÉCNICO SUPERIOR EN SISTEMAS INFORMÁTICOS
+POSTULANTE: JAVIER MERCADO HUERTA
+TUTOR:            ING. GROVER RAMIREZ ZELADA
+ETERAZAMA – COCHABAMBA – BOLIVIA
+2026
+DEDICATORIA
+A Dios, por brindarme la fortaleza, sabiduría y perseverancia necesaria para alcanzar este logro, guiándome durante cada etapa de este camino.
+A mis padres, por su amor incondicional, apoyo constante y sacrificio, quienes fueron mi principal motivación para continuar adelante y cumplir esta meta. Gracias por sus consejos, confianza y por enseñarme el valor del esfuerzo y la dedicación.
+AGRADECIMIENTO
+Expreso mi sincero agradecimiento a todas las personas que contribuyeron en la realización de este proyecto de grado.
+En primer lugar, agradezco a Dios por brindarme vida, fortaleza y sabiduría para superar cada desafío durante mi formación profesional.
+A mis padres y familiares, por su apoyo incondicional, comprensión y motivación constante, quienes fueron un pilar fundamental para alcanzar este objetivo.
+Asimismo, agradezco a mis docentes por los conocimientos impartidos y la orientación brindada durante mi formación académica. De manera especial, agradezco a mi tutor por su guía, paciencia y apoyo durante el desarrollo del presente proyecto.
+Finalmente, agradezco a la Asociación de Agua Potable y Alcantarillado Isinuta por permitir el desarrollo del proyecto y brindar la información necesaria para la implementación del Sistema Web para la Gestión Administrativa, contribuyendo al fortalecimiento de esta propuesta tecnológica.
+ÍNDICE DE CONTENIDO
+RESUMENvii
+INTRODUCCIÓNix
+CAPÍTULO I: PLANTEAMIENTO DEL PROBLEMA1
+1.1Diagnóstico y justificación1
+1.1.1Diagnóstico.1
+1.1.2Justificación.3
+1.1.2.1Justificación técnica.3
+1.1.2.2Justificación social.4
+1.1.2.3Justificación económica.4
+1.1.2.4Justificación académica.5
+1.2Planteamiento y formulación del problema técnico5
+1.2.1Descripción del problema.5
+1.2.2Formulación del problema.6
+1.3Objetivo de la investigación6
+1.3.1Objetivo general.6
+1.3.2Objetivos específicos.6
+1.4Enfoque metodológico7
+2CAPÍTULO II: MARCO TEORICO9
+2.1Proyectos relacionados9
+2.2Conceptos y definiciones10
+2.2.1Sistema web.10
+2.2.2Asociación.10
+2.2.3Administración de cobros.10
+2.2.4Afiliación.11
+2.3Herramientas de análisis y diseño de sistemas11
+2.3.1Metodología.11
+2.3.2Metodología ágil.11
+2.3.3Metodología ágil Scrum.12
+2.3.3.1Roles de la metodología Scrum.13
+2.3.3.2Eventos de Scrum.13
+2.3.3.3Artefactos de Scrum.13
+2.4Lenguaje unificado de modelado UML14
+2.4.1Diagrama de casos de uso.14
+2.4.2Diagrama de clases.15
+2.4.3Diagramas de componentes.16
+2.4.4Enterprise Architect.17
+2.5Tecnologías para el desarrollo del sistema18
+2.5.1Programación orientada a objetos (POO).18
+2.5.2Arquitectura modelo-vista-controlador (MVC).19
+2.5.3Lenguaje de programación PHP.19
+2.5.4Framework Laravel.19
+2.5.5Framework Vue.js.20
+2.5.6Inertia.js.20
+2.5.7Framework Tailwind CSS.22
+2.5.8Entorno de desarrollo integrado Visual Studio Code.22
+2.6Laragon23
+2.7Administración de datos24
+2.7.1Base de datos.24
+2.7.2Modelo de datos relacional.24
+2.7.3Normalización de bases de datos.24
+2.7.4Sistema Gestor de bases de datos (SGBD).25
+2.7.5MySQL.26
+3CAPÍTULO III: PROPUESTA DE INNOVACION O SOLUCION DEL PROBLEMA27
+3.1Definición de roles27
+3.2Planificación27
+3.2.1Especificación de usuarios.27
+3.2.2Determinación de Esfuerzo.28
+3.2.3Historias de Usuario.28
+3.2.4Product Backlog.40
+3.2.5Diagrama de componentes.41
+3.3Ejecución del primer Sprint 142
+3.3.1Definición de hecho.42
+3.3.1Sprint Backlog.42
+3.3.1.1Lista de tareas.42
+3.3.1.2Diagrama de casos de uso.44
+3.3.1.3Diagrama de clases.45
+3.3.2Implementación.45
+3.3.3Sprint Review.49
+3.4Ejecución del Sprint 251
+3.4.1Definición de Hecho.51
+3.4.2Sprint Backlog.51
+3.4.2.1 Lista de tareas.51
+3.4.2.1Diagrama de Casos de Uso.52
+3.4.2.2Diagrama de Clases.53
+3.4.3Implementación.54
+3.4.4Sprint Review.56
+3.5Ejecución del Sprint 356
+3.5.1Definición de Hecho.57
+3.5.2Sprint Backlog 3.57
+3.5.2.1Lista de tareas.57
+3.5.2.2Diagrama de casos de uso.59
+3.5.2.3Diagrama de clases.60
+3.5.3Implementación.60
+3.5.4Sprint Review.65
+3.6Ejecución del Sprint 466
+3.6.1Definición de hecho.67
+3.6.2Sprint Backlog.67
+3.6.2.1Lista de tareas.67
+3.6.2.2Diagrama de casos de uso.68
+3.6.2.3Diagrama de clases.69
+3.6.3Implementación.70
+3.6.4Sprint Review.72
+4CAPÍTULO IV: CONCLUSIONES Y RECOMENDACIONES74
+4.1.1Conclusiones.74
+4.1.2Recomendaciones.75
+BIBLIOGRAFÍA2
+ANEXOS8
+INDICE DE FIGURAS
+Figura 1: Procesos de trabajo de la metodología SCRUM13
+Figura 2:Diagrama de casos de uso UML para un sistema de reserva de viajes16
+Figura 3:Diagrama de clases UML para la arquitectura de un sistema bancario17
+Figura 4: Diagrama de componentes UML para un sistema de administración universitaria17
+Figura 5 :Diagrama elaborado en Enterprise Architect19
+Figura 6 Arquitectura de Laravel.21
+Figura 7: Logotipo Oficial de Inertia.js.22
+Figura 8: Arquitectura del Framework Vue.js.23
+Figura 9:Interfaz de Laragon.24
+Figura 10:Normalización de Bases de Datos: 1NF, 2NF y 3NF.26
+Figura 11:Logotipo Oficial de MySQL27
+Figura 12:Diagrama de componentes del proyecto.43
+Figura 13:Diagrama de casos de uso “Sprint 1”.45
+Figura 14:Diagrama de clases “Sprint 1”.46
+Figura 15: Inicio de sesión de la secretaria.47
+Figura 16: Registro de usuarios.47
+Figura 17:Lista de usuarios registrados.48
+Figura 18:Lista de Roles.48
+Figura 19:Diagrama de casos de uso del Sprint 2.54
+Figura 20:Diagrama de clases del Sprint 2.54
+Figura 21: Lista de categorías.55
+Figura 22: Actualización de servicio.56
+Figura 23: Lista de OTB.56
+Figura 24:Diagrama de clases del Sprint 3.61
+Figura 25: Multa por mora generada automáticamente en el cobro.62
+Figura 26:Diagrama de casos de uso del Sprint 4.70
+Figura 27:Diagrama de clases del Sprint 4.71
+Figura 28: Reporte de ingresos por concepto.72
+Figura 29:Reporte de deudas pendientes.73
+INDICE DE LAS TABLAS
+Tabla 1: Planning Pocker, Estimación de esfuerzo29
+Tabla 2:Historia de usuarios "Gestionar Roles"29
+Tabla 3:Historias de usuario "Gestionar Usuarios".30
+Tabla 4:Historia de usuario “Gestionar Afiliados”.32
+Tabla 5:Historia de usuario “Gestionar Tipos de Afiliación”.33
+Tabla 6:Historia de usuario “Gestionar OTB”34
+Tabla 7:Historia de usuario “Gestionar Servicios por categoría”35
+Tabla 8:Historia de usuario “Gestionar Trabajos de afiliados”36
+Tabla 9:Historia de usuario “Gestionar Pagos”38
+Tabla 10:Historia de usuario “Gestionar Multas”.39
+Tabla 11:Historia de usuario “Obtener Informes”40
+Tabla 12: Product Backlog42
+Tabla 13: Sprint Backlog 1.44
+Tabla 14: Pruebas de funcionamiento del “Sprint 1”50
+Tabla 15: Sprint Backlog 252
+Tabla 16:Pruebas de funcionamiento del “Sprint 2”57
+Tabla 17: "Sprint Backlog 3”58
+Tabla 18:Pruebas de funcionamiento del "Sprint 3"66
+Tabla 19: Sprint Backlog 468
+Tabla 20: Pruebas unitarias de caja blanca "Sprint 4"73
+RESUMEN
+El presente proyecto de grado desarrolló un sistema web para la gestión administrativa de la Asociación de Agua Potable y Alcantarillado Isinuta. La institución registraba la información de afiliados, pagos, multas y reportes en cuadernos, recibos físicos, hojas de cálculo y un sistema de escritorio, lo que ocasionaba duplicidad de datos, errores en los montos y demoras en la atención. Como solución, se construyó una aplicación web de diez módulos: roles, usuarios, afiliados, tipos de afiliación, organizaciones territoriales de base, servicios por categoría, trabajos, pagos, multas y reportes. El sistema automatizó cinco procesos: la generación de multas por mora, el pase de lista con la multa por inasistencia, la emisión de recibos, el control de deudas por lote, que incluye el estado de cuenta y la transferencia del lote sin deudas a un nuevo titular, y la generación de reportes de ingresos y deudas. El desarrollo se organizó con la metodología ágil Scrum en cuatro iteraciones y se emplearon Laravel, Vue.js, Inertia.js y MySQL. Las veintidós pruebas de funcionamiento realizadas obtuvieron el resultado esperado, y la información quedó centralizada para la toma de decisiones de la mesa directiva.
+Palabras clave: sistema web, gestión administrativa, automatización de procesos, control de información, Asociación de Agua Potable y Alcantarillado Isinuta.
+INTRODUCCIÓN
+En los servicios de agua potable y alcantarillado, la gestión administrativa es fundamental, porque el registro ordenado de los afiliados, el cobro oportuno de las tarifas y el control de las multas permiten sostener el servicio y rendir cuentas a la comunidad. Por ello, las instituciones que brindan servicios básicos requieren herramientas tecnológicas que les permitan administrar su información de forma organizada, segura y oportuna. En este contexto, los sistemas web facilitan la automatización de procesos, la centralización de datos y el acceso confiable a la información para la toma de decisiones.
+En la Asociación de Agua Potable y Alcantarillado Isinuta, la gestión administrativa combinaba un sistema de escritorio con registros manuales en cuadernos, recibos físicos y hojas de cálculo. Esta forma de trabajo dificultaba el control de afiliados, pagos, multas, servicios y reportes. Por ello, se desarrolló un Sistema Web para la Gestión Administrativa que centraliza la información y automatiza los principales procesos institucionales.
+El objetivo principal del proyecto fue desarrollar un sistema web para mejorar la gestión administrativa de la Asociación de Agua Potable y Alcantarillado Isinuta, mediante la automatización de los procesos de control de afiliados, pagos, multas y reportes, y la centralización de la información institucional, durante la gestión 2026.
+Para el desarrollo del proyecto se aplicó la metodología ágil Scrum, organizando las actividades mediante Sprint que permitieron implementar progresivamente las funcionalidades y validar los avances obtenidos. Asimismo, se emplearon tecnologías como Laravel, Vue.js, Inertia.js y MySQL, junto con el modelado UML para el análisis y diseño del sistema.
+El documento se organizó en cuatro capítulos. En el Capítulo I se presentan el diagnóstico, la justificación, el planteamiento del problema, los objetivos y el enfoque metodológico. En el Capítulo II se desarrolla el marco teórico conceptual que sustenta el proyecto. En el Capítulo III se describe la propuesta de solución, desarrollada en cuatro Sprint, junto con las pruebas realizadas y el análisis de resultados. Finalmente, en el Capítulo IV se exponen las conclusiones y recomendaciones.
+CAPÍTULO I
+PLANTEAMIENTO DEL PROBLEMA
+CAPÍTULO I: PLANTEAMIENTO DEL PROBLEMA
+En el presente capítulo se presenta el diagnóstico de la Asociación de Agua Potable y Alcantarillado Isinuta, identificando las principales dificultades relacionadas con la gestión administrativa de la institución. Asimismo, se expone la justificación técnica, social, económica y académica del proyecto, además de la descripción y formulación del problema. Finalmente, se establecen los objetivos de la investigación y el enfoque metodológico que permitió el desarrollo del sistema web propuesto.
+Diagnóstico y justificación
+Diagnóstico.
+La Asociación de Agua Potable y Alcantarillado Isinuta, fundada en el año 1995 y ubicada en la OTB Barrio Centro de la comunidad, brinda los servicios de agua potable y alcantarillado sanitario a los habitantes de la población, permitiendo que numerosas familias accedan a servicios básicos indispensables para su vida diaria.
+Se encuentra organizado mediante una mesa directiva encargada de la toma de decisiones y la supervisión del funcionamiento de los servicios ofrecidos a los afiliados. Dicha directiva se renueva cada dos años, lo que promueve la participación activa de los miembros de la comunidad en la gestión institucional.
+La asociación dispone de un sistema informático de escritorio desarrollado en el año 2018 y adquirido en el año 2020. El personal administrativo registraba inicialmente los datos en medios manuales, como cuadernos de notas, recibos físicos y archivos de Excel, para posteriormente ingresar la misma información en el sistema de escritorio, lo que generaba duplicidad de trabajo y demoras en la actualización de los registros.
+Para iniciar la afiliación del agua potable, el interesado se presentaba ante la administración con su documento de identidad y pagaba Bs. 3.500 al contado o Bs. 3.800 a plazo. Con ese pago quedaba registrada la afiliación del lote.
+De igual manera, para la afiliación del alcantarillado, el interesado presentaba su documento de identidad y la documentación del inmueble, y pagaba Bs. 2.000 al contado o Bs. 2.500 a plazo. Con ese pago quedaba registrada la afiliación de alcantarillado del lote.
+A partir de la afiliación, cada lote pagaba el servicio mensual de agua potable y el de alcantarillado según la categoría del inmueble. En Domiciliar el agua es Bs. 8 y el alcantarillado es Bs. 15. En Comercial el agua es Bs. 17 y el alcantarillado es Bs. 20. Si ese cobro mensual se atrasaba, se aplicaba una multa trimestral de Bs. 50 al cumplirse tres meses sin pagar; esa multa se acumula (Bs. 50, Bs. 100 y Bs. 150) y, al cumplirse un año (12 meses vencidos), corresponde la mora anual de Bs. 150 y el corte del servicio por lote. Estas situaciones se trataban en reuniones comunitarias, donde se hacía el seguimiento y se comunicaba al afiliado la necesidad de regularizar sus pagos.
+El cobro mensual del agua y el del alcantarillado se registraban por separado, y la multa por atraso tenía su propio recibo. El monto que cancela el afiliado resultaba de la suma de esos comprobantes.
+Asimismo, los afiliados estaban obligados a participar en los trabajos convocados por la asociación, como la limpieza u otro tipo definido para cada ocasión. La obligación correspondía a cada lote, porque el afiliado usa el servicio en ese lote. Si una persona tenía dos o tres lotes, debía cumplir el trabajo por cada uno; si no cumplía, la multa se aplicaba a cada lote de ese mismo afiliado. La secretaria convocaba por OTB, llamaba en un cuaderno la lista de los afiliados de esa OTB y, al lote cuyo afiliado no estaba presente, se le imponía una multa por el monto definido para ese trabajo. Este pase de lista manual demoraba la convocatoria y dificultaba saber qué lotes habían cumplido y cuáles tenían la multa pendiente.
+Asimismo, cuando un afiliado deseaba ceder su lugar a otra persona, la asociación aplicaba un procedimiento administrativo. El trámite solo podía iniciarse si el afiliado o propietario original cancelaba la totalidad de las deudas de ese lote; de lo contrario, no se autorizaba la cesión. Una vez regularizada la cuenta, el interesado presentaba la fotocopia de la Cédula de Identidad del nuevo afiliado y la documentación de compra y venta del terreno que acreditara la transferencia. Con esos requisitos, el personal administrativo anulaba el nombre del afiliado anterior y registraba al nuevo titular en el sistema y en los documentos físicos, sin conservar un historial de propietarios pasados, asumiendo el nuevo afiliado la responsabilidad de los pagos mensuales. Este procedimiento era distinto al de una afiliación nueva, en la cual una persona que adquiría un terreno e iniciaba el uso de los servicios realizaba el pago de afiliación y presentaba la fotocopia de su Cédula de Identidad para registrar la afiliación del lote.
+Finalmente, la elaboración de informes diarios y reportes administrativos era responsabilidad del área administrativa, la cual se apoyaba tanto en registros manuales como en la información almacenada en el sistema informático. Estos informes permitían consolidar los datos sobre los servicios prestados y los ingresos generados, facilitando la toma de decisiones por parte de la mesa directiva.
+Justificación.
+Justificación técnica.
+La presente propuesta se justificó técnicamente mediante el desarrollo de un sistema web orientado a mejorar la gestión administrativa de la Asociación de Agua Potable y Alcantarillado Isinuta. Antes de su implementación, la institución utilizaba registros manuales en cuadernos, recibos físicos, hojas de cálculo y un sistema de escritorio, lo que generaba duplicidad de información, demoras y dificultades en el acceso a los datos.
+Para el desarrollo del sistema se utilizaron tecnologías de software libre como Laravel para el backend, Vue.js e Inertia.js para el frontend y MySQL como gestor de base de datos, lo que permitió centralizar la información administrativa en una plataforma web accesible y organizada. Asimismo, se emplearon HTML, CSS, JavaScript y Tailwind CSS para la estructura, presentación e interactividad de las interfaces.
+La solución integró en una sola plataforma la gestión de afiliados con sus lotes, tipos de afiliación, OTB, servicios por categoría, trabajos de los afiliados, pagos, multas y reportes administrativos, incorporando control de acceso por roles y permisos para la secretaria y el presidente, lo que mejora la seguridad, confiabilidad y disponibilidad de la información institucional.
+Justificación social.
+La presente propuesta tuvo importancia social porque contribuyó al mejoramiento de la gestión administrativa de la Asociación de Agua Potable y Alcantarillado Isinuta, institución encargada de brindar los servicios básicos de agua potable y alcantarillado sanitario a la comunidad.
+La implementación del sistema web permite reducir los errores y demoras ocasionados por el manejo manual de la información, facilitando una atención más rápida y organizada para los afiliados. Asimismo, mejora el control de pagos y multas del afiliado, fortaleciendo la transparencia y confiabilidad de los registros institucionales.
+Los principales beneficiarios son los afiliados, quienes pueden conocer con mayor claridad sus pagos, sus multas y sus obligaciones pendientes mediante la atención administrativa; el personal administrativo, que reduce la carga de trabajo ocasionada por el registro duplicado en cuadernos, hojas de cálculo y el sistema anterior; y la mesa directiva, que cuenta con información ordenada y oportuna para la toma de decisiones y la rendición de cuentas en las reuniones comunitarias.
+Justificación económica.
+La presente propuesta se justificó económicamente por su viabilidad dentro de los recursos disponibles de la Asociación de Agua Potable y Alcantarillado Isinuta. El desarrollo del sistema se realizó con herramientas de software libre como Laravel, Vue.js, Inertia.js y MySQL, lo que evitó costos por adquisición de licencias de software.
+Asimismo, el sistema fue diseñado para funcionar en los equipos de computación con los que ya contaba la institución, aprovechando la infraestructura existente y evitando inversiones adicionales en hardware especializado.
+La automatización del cálculo de multas por mora, del pase de lista y de la multa por inasistencia al trabajo, el control de deudas y la generación de reportes permite reducir el tiempo invertido por el personal administrativo en tareas manuales, disminuir los errores en los montos cobrados que podían ocasionar pérdidas económicas a la asociación y reducir el uso de cuadernos, recibos físicos y materiales de escritorio, contribuyendo a una gestión más eficiente y sostenible de los recursos de la institución.
+Justificación académica.
+La ejecución del proyecto permitió aplicar los conocimientos adquiridos durante la formación académica en áreas como Análisis y Diseño de Sistemas, Programación Web y Bases de Datos, mediante el desarrollo de una solución tecnológica orientada a resolver una problemática real dentro de una institución comunitaria.
+Asimismo, el proyecto contribuyó al fortalecimiento de habilidades relacionadas con el análisis, diseño e implementación de sistemas web utilizando tecnologías como Laravel, Vue.js, Inertia.js y MySQL, además de la aplicación de la metodología ágil Scrum y el modelado UML. De igual manera, permitió desarrollar competencias en la automatización de procesos administrativos, el control de acceso por roles y la gestión de información.
+La ejecución del proyecto consolidó los conocimientos teóricos y prácticos adquiridos durante la carrera, fortaleciendo la formación profesional en el área de Sistemas Informáticos mediante la aplicación de herramientas tecnológicas en un entorno institucional real.
+Planteamiento y formulación del problema técnico
+Descripción del problema.
+El registro de los afiliados, de sus lotes y de los tipos de afiliación se realizaba en cuadernos y en un sistema de escritorio que no contaba con usuarios ni roles para controlar el acceso a la información y que no validaba los datos ingresados. Esto provocaba duplicidad e inconsistencia en la información de los afiliados, dificultaba mantenerla actualizada y no permitía controlar quién registraba o modificaba los datos.
+Las OTB (barrios o sindicatos) y las tarifas mensuales de agua potable y alcantarillado, que varían según la categoría del inmueble (Domiciliar y Comercial), no estaban definidas de forma ordenada en un solo lugar y se aplicaban de forma manual al momento del cobro, consultando el sistema de escritorio, los cuadernos y las hojas de Excel. Esto ocasionaba desorden en la ubicación de los lotes, errores en el monto que correspondía cobrar a cada lote y demoras en la atención a los afiliados.
+Los pagos mensuales, las multas por mora y las multas por inasistencia a los trabajos se controlaban de forma manual: los pagos se anotaban en recibos físicos y cuadernos, la mora se calculaba revisando los meses adeudados en distintos registros y la asistencia a los trabajos se controlaba llamando la lista en un cuaderno, según la OTB que elegía la secretaria, aunque la obligación correspondía a cada lote. Esto ocasionaba errores en los montos de las multas, demora en el pase de lista y en el cobro, y dificultad para conocer los meses pagados y las deudas pendientes de cada lote, tanto para el cobro como para autorizar la cesión de un lote a un nuevo titular, que se registraba sin conservar el historial de los titulares anteriores.
+La elaboración de los informes de ingresos y deudas requería revisar manualmente los cuadernos, los recibos, las hojas de Excel y los datos del sistema de escritorio, sin posibilidad de filtrar la información por fechas, afiliado, concepto o categoría. Esto ocasionaba demoras en la obtención de los informes y dificultaba la toma de decisiones y la rendición de cuentas de la mesa directiva en las reuniones comunitarias.
+Formulación del problema.
+¿Cómo mejorar la gestión administrativa de la Asociación de Agua Potable y Alcantarillado Isinuta mediante un sistema web que permita automatizar los procesos y centralizar la información durante la gestión 2026?
+Objetivos
+Objetivo general.
+Desarrollar un sistema web para mejorar la gestión administrativa de la Asociación de Agua Potable y Alcantarillado Isinuta, mediante la automatización de los procesos de control de afiliados, pagos, multas y reportes, y la centralización de la información institucional, durante la gestión 2026.
+Objetivos específicos.
+Desarrollar los módulos de roles, usuarios, afiliados y tipos de afiliación, que permitan registrar y validar la información de los afiliados y sus lotes, con control de acceso por rol para la secretaria y el presidente, a fin de evitar la duplicidad e inconsistencia de los datos y controlar quién registra o modifica la información.
+Implementar los módulos de OTB y de servicios por categoría, que permitan organizar los barrios o sindicatos de la asociación y definir en un solo lugar la tarifa mensual de agua potable y alcantarillado según la categoría del inmueble (Domiciliar y Comercial), a fin de que el sistema aplique el monto correcto en cada cobro. Las categorías del inmueble se administran como una función dentro del módulo de servicios, no como un módulo independiente.
+Implementar los módulos de trabajos, pagos y multas, que permitan pasar la lista de los trabajos por OTB y generar la multa de cada lote ausente, registrar los pagos por periodo con emisión de recibo, consultar el estado de cuenta de cada lote, transferir el lote sin deudas a un nuevo titular conservando el historial y generar automáticamente las multas por mora según las reglas de la asociación, a fin de reducir los errores en los montos, agilizar el cobro y conocer las deudas pendientes de cada lote.
+Implementar el módulo de reportes, que permita obtener el reporte de ingresos y el reporte de deudas pendientes, con filtros por fechas, afiliado, concepto y categoría, subtotales, total general y exportación a Excel o impresión, a fin de agilizar la obtención de información para la toma de decisiones de la mesa directiva.
+Enfoque metodológico
+El proyecto estuvo orientado a la solución de un problema específico dentro del contexto de la Asociación de Agua Potable y Alcantarillado Isinuta. Se trató de una investigación aplicada, porque, a partir del análisis de los procesos de gestión administrativa, se desarrolló un sistema web concreto que resolvió ese problema en la institución. Según Lozada (2014), “la investigación aplicada busca la generación de conocimiento con aplicación directa a los problemas de la sociedad o el sector productivo” (p. 34). El trabajo se centró en identificar la problemática, definir los requerimientos y validar las funcionalidades implementadas en cada Sprint.
+Para la recolección de información se emplearon instrumentos como entrevistas al personal administrativo y revisión de documentos institucionales, tales como cuadernos de registro, recibos físicos y hojas de cálculo utilizadas en la institución. Estos instrumentos permitieron identificar necesidades, dificultades y procesos relacionados con la gestión administrativa existente. El enfoque fue mixto porque combinó la recolección y el análisis de datos cualitativos y cuantitativos en un mismo estudio (Hernández Sampieri et al., 2014): cualitativo, en la recolección de información mediante estos instrumentos, y cuantitativo, en la validación del sistema con las 22 pruebas de funcionamiento registradas en los cuatro Sprint.
+Asimismo, se utilizó la metodología ágil Scrum, debido a que permitió organizar el trabajo en etapas iterativas e incrementales, facilitar la adaptación a los requerimientos y validar continuamente las funcionalidades desarrolladas. Además, se utilizaron herramientas de modelado UML para el análisis y diseño del sistema, permitiendo representar de manera clara los procesos y estructuras involucradas.
+En cuanto a las tecnologías empleadas, el sistema fue desarrollado utilizando Laravel como backend, Vue.js e Inertia.js para la interfaz de usuario, y MySQL como gestor de base de datos para el almacenamiento y administración de la información institucional.
+CAPÍTULO II
+MARCO TEÓRICO CONCEPTUAL
+CAPÍTULO II: MARCO TEORICO
+En el presente capítulo se presenta el marco teórico que sustenta el desarrollo del sistema web para la Asociación de Agua Potable y Alcantarillado Isinuta. Asimismo, se describen los proyectos relacionados y los conceptos fundamentales del sistema, además de las herramientas de análisis y diseño utilizadas, como Scrum y UML. Finalmente, se exponen las tecnologías empleadas en el desarrollo del sistema y en la administración de datos.
+Proyectos relacionados
+Quispe Chipa (2025) realizó la tesis titulada Diseño de un sistema web para mejorar la gestión de información del servicio de agua de la Municipalidad Distrital de Mollebaya, Arequipa, en la que concluyó que el diseño del sistema web permitirá mejorar significativamente la gestión de información del servicio de agua, optimizando los procesos administrativos y reduciendo errores en el registro y control de datos. Asimismo, el uso de tecnologías web y metodologías ágiles contribuirá a brindar una atención más rápida, segura y eficiente a los usuarios, fortaleciendo la calidad del servicio y facilitando la toma de decisiones dentro de la institución.
+Solarez Chico, (2023) realizó la tesis que lleva por titulo SISTEMA WEB PARA LA ADMINISTRACIÓN DE INFORMACIÓN Y CONTROL DE LA RECAUDACIÓN DE RECURSOS DEL SUMINISTRO DE AGUA POTABLE Se concluye que el sistema web desarrollado para la administración y control de la recaudación del suministro de agua potable permitió optimizar los procesos administrativos, automatizando el registro, control y almacenamiento de la información de los usuarios. Asimismo, mediante el uso de tecnologías como PHP, PostgreSQL y la metodología UWE, el sistema logró mejorar la eficiencia, seguridad y organización de los datos, reduciendo pérdidas de información y tiempos de atención, además de brindar una interfaz dinámica y accesible que fortalece la calidad del servicio ofrecido a los clientes.
+Paco Tamo (2025) realizó el proyecto de grado titulado Aplicación web para la administración de cobros de los afiliados de la OTB Porvenir, en el que concluyó que el desarrollo de la aplicación web permitió mejorar significativamente la administración, organización y transparencia en la gestión financiera de la organización durante la gestión 2025.
+Conceptos y definiciones
+Sistema web.
+Macías Basurto (2020) menciona que “un sistema web es una aplicación de software que se codifica en lenguajes soportados por los navegadores, permitiendo a los usuarios interactuar con información dinámica almacenada en servidores remotos a través de internet de forma totalmente segura, descentralizada y automatizada” (p. 14). En el presente proyecto, el sistema web permite que la secretaria y el presidente de la asociación accedan desde el navegador a la información de afiliados, pagos, multas y reportes.
+Asociación.
+Según Definición.de (2023), se menciona que “una asociación es un grupo de personas que se organizan de manera voluntaria con el fin de alcanzar objetivos comunes, estableciendo normas internas, derechos y obligaciones que regulan la participación de sus miembros dentro de una estructura formal y organizada”(p. 16).En la actualidad, las asociaciones permiten la integración de individuos con intereses similares en diferentes  ámbitos comerciales, sociales y otros, facilitando la cooperación, la toma de decisiones y el desarrollo de actividades dentro de un marco organizativo estructurado.
+Administración de cobros.
+La administración de cobros puede definirse de diferentes maneras; entre ellas, se destaca la siguiente:
+La gestión de cobros comprende labores administrativas y financieras orientadas a dirigir y obtener recursos monetarios provenientes de transacciones económicas o mercantiles, permitiendo mantener el flujo de efectivo, prevenir posibles incumplimientos de pago y garantizar una adecuada estabilidad financiera dentro de las organizaciones (Solórzano Trejo,  2021,p.15).
+En la actualidad, la administración de cobros permite mantener un adecuado control financiero, facilitando el registro oportuno de pagos, la reducción de deudas pendientes y una mejor organización económica dentro de instituciones, empresas y asociaciones.
+Afiliación.
+Vanegas Calderón, Villarraga, & Zapata Sotto, (2022) mencionan que “es el término utilizado para denominar al individuo que está registrado o inscrito en una institución, ya sea una organización gremial, política, entidad u otro tipo; adquiriendo de esta manera responsabilidades, derechos y obligaciones normadas dentro de la estructura institucional” (p. 36). En el contexto del presente proyecto, la afiliación corresponde al registro del titular y de su lote ante la Asociación de Agua Potable y Alcantarillado Isinuta, con derechos de servicio y obligaciones de pago mensual, participación en trabajos y cumplimiento de multas.
+Herramientas de análisis y diseño de sistemas
+Metodología.
+La metodología puede definirse de diferentes maneras; entre ellas, se destaca la siguiente:
+La metodología constituye un conjunto organizado de métodos, técnicas y procedimientos que orientan el desarrollo sistemático de actividades investigativas o proyectos, permitiendo planificar, ejecutar y controlar cada etapa para alcanzar objetivos específicos con eficiencia, orden y resultados confiables, dentro de cualquier ámbito profesional (Maldonado Reyes & Álvarez Ochoa, 2023,p.20).
+En la actualidad, las metodologías son fundamentales en el desarrollo de software, ya que permiten organizar actividades, controlar procesos y mejorar la calidad del sistema. Además, facilitan la planificación de tareas y el seguimiento adecuado durante cada etapa del proyecto.
+Metodología ágil.
+Las metodologías ágiles pueden definirse de diferentes maneras; entre ellas, se destaca la siguiente:
+Las metodologías ágiles son enfoques de desarrollo de software que promueven la colaboración continua entre equipos, la adaptación rápida a los cambios, la entrega frecuente de funcionalidades y la participación activa del cliente durante todo el proceso de desarrollo del sistema informático (Letelier & Penadés, 2006,p.7).
+En la actualidad, las metodologías ágiles facilitan el desarrollo eficiente de software, permitiendo una rápida adaptación a los cambios, una mejor organización del trabajo y una entrega continua de soluciones que satisfacen las necesidades de los usuarios.
+Metodología ágil Scrum.
+Scrum puede definirse de diferentes maneras; entre ellas, se destaca la siguiente:
+Según Schwaber y Sutherland (2020), Scrum es un marco de trabajo ligero que ayuda a las personas, equipos y organizaciones a generar valor mediante soluciones adaptativas para problemas complejos, usando iteraciones cortas, inspección frecuente y adaptación continua del proceso de desarrollo (p. 3).
+Scrum es un marco de trabajo ágil que permite gestionar proyectos complejos de manera organizada, flexible e iterativa, facilitando la adaptación a los cambios y la entrega continua de valor. Su aplicación mejora la colaboración del equipo, optimiza los procesos de desarrollo y fortalece la comunicación con el cliente, convirtiéndose en una metodología clave en proyectos de software modernos.
+Figura 1: Procesos de trabajo de la metodología SCRUM
+[IMG:media/image3.png]
+Nota: La figura representa los procesos de trabajos de la metodología scrum ayudando a organizarse de manera más eficiente al momento de presentar funciones de desarrollo. Figura extraída de la siguiente URL:
+https://www.slideteam.net/media/catalog/product/cache/1280x720/s/c/scrum_methodology_and_project_management_powerpoint_powerpoint_presentation_slide09.jpg
+Roles de la metodología Scrum.
+Schwaber & Sutherland (2020) mencionan que “Scrum está compuesto por tres roles: Product Owner, Scrum Master y Developers, quienes trabajan de forma colaborativa para maximizar el valor del producto, organizar el trabajo y aplicar correctamente el marco ágil en proyectos complejos de desarrollo de software eficiente”. Los roles de Scrum permiten una estructura clara en el equipo, donde el Product Owner define prioridades, el Scrum Master facilita el proceso y los Developers ejecutan el trabajo, logrando colaboración eficiente, entrega de valor y mejora continua en proyectos ágiles de software.
+Eventos de Scrum.
+Schwaber & Sutherland, (2020) menciona que “Scrum define eventos como Sprint, Sprint Planning, Daily Scrum, Sprint Review y Sprint Retrospective, los cuales permiten inspección y adaptación continua del trabajo, promoviendo la transparencia, coordinación del equipo y mejora constante del proceso ágil de desarrollo de software eficiente.” Los eventos de Scrum estructuran el trabajo en ciclos iterativos, facilitando la planificación, seguimiento y revisión constante del progreso. Estos fomentan la transparencia, la inspección continua y la adaptación, mejorando la comunicación del equipo y la eficiencia en proyectos ágiles de software.
+Artefactos de Scrum.
+Schwaber & Sutherland (2020) menciona que “Los artefactos de Scrum incluyen Product Backlog, Sprint Backlog e Incremento, los cuales representan el trabajo, las prioridades y el resultado del equipo, asegurando transparencia, claridad, control, organización, enfoque y mejora continua en la entrega de valor del producto desarrollado”. Los artefactos de Scrum facilitan la organización y seguimiento del trabajo del equipo, permitiendo visualizar prioridades, avances y resultados. Su uso garantiza transparencia, control del proceso y enfoque en la entrega de valor continuo en proyectos ágiles de desarrollo de software.
+Lenguaje unificado de modelado UML
+Jiménez de Parga, María Serrano, & Joyanes Aguilar ,(2024) mencionan que el “El modelado UML es una técnica de representación visual que permite analizar, diseñar y documentar sistemas de software mediante diagramas estructurados, facilitando la comprensión, organización, comunicación y desarrollo de soluciones informáticas complejas dentro del proceso y  la  ingeniería de software”. El modelado UML es una herramienta fundamental en el desarrollo de software que permite representar sistemas de forma visual y estructurada. Facilita el análisis, diseño y documentación, mejorando la comprensión del sistema y la comunicación entre los desarrolladores en proyectos complejos de ingeniería de software.
+Diagrama de casos de uso.
+Los diagramas de casos de uso permiten visualizar los requerimientos funcionales y la interacción del usuario con el sistema. Según Sommerville (2021), estos diagramas son “modelos que muestran las interacciones entre el sistema y sus usuarios, ayudando a identificar las funciones principales y los límites del software que se va a desarrollar” (p. 152). En este sentido, este diagrama resulta esencial para el proyecto, ya que permitió definir con claridad qué acciones pueden realizar la secretaria y el presidente dentro del sistema web de la asociación, facilitando la comprensión de las necesidades del usuario final.
+Figura 2:Diagrama de casos de uso UML para un sistema de reserva de viajes
+[IMG:media/image4.png]
+Nota: Gráfico que detalla la interacción entre los actores externos y los casos de uso del sistema mediante relaciones de inclusión y extensión. Extraído de:
+https://www.lucidchart.com/pages/tutorial/uml-use-case-diagram
+Diagrama de clases.
+El diagrama de clases es el pilar de la estructura estática del software. Según  Kendall y Kendall (2020), “este diagrama representa la estructura de las clases del sistema, sus atributos, métodos y las relaciones que existen entre ellas, proporcionando un mapa conceptual de los datos y su comportamiento” (p. 340). De ello se desprende que, mediante este diagrama, es posible definir la estructura de la base de datos y la organización de la información de los afiliados, permitiendo que el desarrollo en Laravel y MySQL cuente con una base sólida y bien estructurada.
+Figura 3:Diagrama de clases UML para la arquitectura de un sistema bancario
+[IMG:media/image5.png]
+Nota: Gráfico que representa la estructura estática del sistema, detallando las clases, sus atributos, métodos y las relaciones de asociación y herencia entre entidades.
+Extraído de:https://medium.com/@smagid_allThings/uml-class-diagrams-tutorial-step-by-step-520fd83b300b
+Diagramas de componentes.
+UAM (2020) define el diagrama de componentes como “una vista que describe la organización y las dependencias entre los componentes de software, incluyendo código fuente, binarios o ejecutables” (p. 94). Este diagrama es vital en la etapa de arquitectura física, permitiendo visualizar la modularidad del sistema y cómo sus diversas partes se ensamblan para formar la solución completa.
+Figura 4: Diagrama de componentes UML para un sistema de administración universitaria
+[IMG:media/image6.png]
+Nota: Gráfico que describe la organización y las dependencias lógicas entre los módulos de software, las interfaces y los componentes de infraestructura del sistema. Extraído de: https://agilemodeling.com/artifacts/componentdiagram.htm
+Enterprise Architect.
+Enterprise Architect es una herramienta CASE diseñada para el modelado y diseño de sistemas. Según Sparx Systems (2022), esta plataforma es “una herramienta de modelado y diseño basada en UML que cubre todos los aspectos del ciclo de desarrollo de software, desde la recolección de requisitos hasta el despliegue” (p. 14). Por lo tanto, permite traducir los requerimientos y reglas de negocio en diagramas estructurados bajo estándares de ingeniería de software.
+Entre sus ventajas, ProAgile (2022) destaca la generación automática de documentación y código a partir de los modelos, y la trazabilidad de los requisitos durante todo el ciclo de vida del proyecto. De esta manera, la herramienta reduce los errores de interpretación en el diseño y facilita la elaboración de los diagramas del sistema.
+Figura 5 :Diagrama elaborado en Enterprise Architect
+[IMG:media/image7.png]
+Nota: Diagrama elaborado en Enterprise Architect que representa la organización, estructura y relaciones entre los componentes del sistema, facilitando la comprensión de la arquitectura y la interacción de sus elementos. Fuente: Elaboración propia mediante Enterprise Architect. Extraído de: https://i.ytimg.com/vi/YHScUQ0fnE4/maxresdefault.jpg
+Tecnologías para el desarrollo del sistema
+Programación orientada a objetos (POO).
+La programación orientada a objetos es un paradigma que organiza el código en unidades que combinan datos y comportamiento. Según Deitel y Deitel (2021), este enfoque “permite a los desarrolladores diseñar sistemas de software mediante analogías con el mundo real, estructurando el código en componentes reutilizables y autónomos” (p. 45).
+De igual manera, Kendall y Kendall (2020) la definen como “un enfoque de desarrollo de sistemas que emplea objetos como unidades básicas para la construcción de aplicaciones complejas” (p. 312). De esta manera, la POO permite desarrollar sistemas modulares, reutilizables y fáciles de mantener.
+Arquitectura modelo-vista-controlador (MVC).
+El patrón MVC organiza las aplicaciones separando las responsabilidades de cada componente. Según Larman (2022), el MVC “es un patrón arquitectónico que divide una aplicación en tres áreas lógicas separadas para aislar la lógica de negocio de la interfaz de usuario” (p. 195).
+Asimismo, Pressman y Maxim (2021) lo definen como “un enfoque de diseño arquitectónico que separa el procesamiento de la información, la lógica de la aplicación y la presentación visual” (p. 310). Esta separación facilita el mantenimiento del sistema, ya que cada componente puede modificarse de forma independiente.
+Lenguaje de programación PHP.
+PHP es un lenguaje de programación interpretado del lado del servidor, orientado a la creación de aplicaciones web dinámicas. De acuerdo con Gilmore (2020), este lenguaje es “un recurso de código abierto que se ejecuta en el servidor web antes de enviar el resultado en HTML limpio al navegador del cliente” (p. 12).
+Por su parte, Nixon (2021) lo define como “un lenguaje de scripting del lado del servidor potente y flexible, ampliamente utilizado para construir aplicaciones web robustas capaces de gestionar datos dinámicos” (p. 34). De esta manera, PHP procesa las peticiones en el servidor y permite interactuar con la base de datos de forma segura.
+Framework Laravel.
+Laravel es un framework de código abierto basado en PHP para el desarrollo de aplicaciones web. Según Otwell (2021), Laravel es “un marco de trabajo que proporciona herramientas robustas y características de seguridad avanzadas para agilizar el desarrollo de aplicaciones web estructuradas y mantenibles” (p. 34). Por lo tanto, ofrece una estructura predefinida basada en el patrón MVC que simplifica tareas como el enrutamiento, la autenticación y el acceso a la base de datos, siendo utilizado en el presente proyecto para el desarrollo del backend.
+Figura 6 Arquitectura de Laravel.
+Nota:  Gráfico que describe la arquitectura de Laravel, mostrando la interacción entre las rutas, middleware, controladores, modelos, vistas y la base de datos, permitiendo comprender el flujo de procesamiento de las solicitudes dentro de la aplicación web. Fuente: https://blogger.googleusercontent.com/img/b/ [IMG:media/image8.jpeg]
+Framework Vue.js.
+Vue.js es un framework progresivo de JavaScript para la construcción de interfaces de usuario interactivas. Según You (2020), Vue.js es “un marco de trabajo enfocado exclusivamente en la capa de la vista, diseñado para ser adoptado de forma incremental e integrarse fácilmente con otras librerías” (p. 42).
+Asimismo, Filipova (2021) lo define como “un framework de JavaScript que utiliza un DOM virtual para optimizar el rendimiento de las páginas web mediante la reactividad de datos bidireccional” (p. 19). De esta manera, Vue.js permite que la interfaz se actualice automáticamente cuando cambia la información, facilitando la construcción de pantallas dinámicas mediante componentes reutilizables.
+Inertia.js.
+Inertia.js es una biblioteca que permite conectar frameworks de backend con frameworks modernos de frontend sin necesidad de construir una API. Según Inertia.js Development Team (2024), esta herramienta es “un enfoque que permite crear aplicaciones de una sola página utilizando marcos de renderizado del lado del servidor completamente tradicionales” (p. 1). De esta manera, las rutas y la lógica del sistema se mantienen en los controladores de Laravel, mientras que las pantallas se construyen con Vue.js, ofreciendo una navegación fluida sin recargar la página completa.
+Figura 7: Logotipo Oficial de Inertia.js.
+[IMG:media/image9.png]
+Nota: Gráfico que representa el logotipo de la herramienta Inertia.js, una biblioteca de enrutamiento que permite conectar el backend con frameworks modernos de frontend de forma visual e intuitiva, optimizando las tareas de renderizado dinámico, transferencia de datos y control de navegación desde un flujo de trabajo monolítico unificado. Fuente: inertiajs.com
+Figura 8: Arquitectura del Framework Vue.js.
+Nota: Gráfico que representa la arquitectura del framework Vue.js, mostrando la interacción entre componentes, vistas, directivas, eventos y el sistema de gestión de datos reactivos, permitiendo comprender la estructura y funcionamiento de la interfaz de usuario de la aplicación. Fuente: https://012.vuejs.org/images/mvvm.png [IMG:media/image10.png]
+Framework Tailwind CSS.
+Tailwind CSS es un framework de diseño basado en clases de utilidad para la creación de interfaces web personalizadas. Según Thomas (2023), Tailwind CSS es “un marco de trabajo que proporciona clases analíticas atómicas que se pueden componer para construir cualquier diseño de interfaz directamente en el HTML o en los componentes de la vista, eliminando la necesidad de escribir hojas de estilo personalizadas desde cero” (p. 58). De esta manera, los estilos se aplican directamente en los componentes, agilizando el diseño de interfaces ordenadas y adaptables a distintos tamaños de pantalla.
+Entorno de desarrollo integrado Visual Studio Code.
+Visual Studio Code es un editor de código fuente ligero y extensible, orientado al desarrollo de aplicaciones web. Según Microsoft (2023), esta aplicación es “un entorno de edición extensible y multiplataforma que combina la ligereza de un editor de texto con herramientas avanzadas de depuración y soporte integrado para control de versiones” (p. 10).
+Por su parte, Sommerhoff (2021) destaca que ofrece autocompletado inteligente y análisis de código en tiempo real (p. 45). De esta manera, Visual Studio Code funciona como el entorno de trabajo donde se escribe, depura y organiza el código del sistema.
+Laragon.
+Laragon es un entorno de desarrollo local que integra los servicios necesarios para ejecutar aplicaciones web en una computadora. Según Nguyen (2021), Laragon es “un entorno de desarrollo local moderno y portátil que simplifica drásticamente la configuración de servidores web para entornos PHP, Node.js y Python” (p. 14).
+Asimismo, Gundersen (2022) lo define como “una plataforma de desarrollo local ligera y aislada que automatiza la creación de servidores virtuales y la gestión de bases de datos de manera transparente para el usuario” (p. 45). De esta manera, Laragon permite simular un servidor en el equipo local sin realizar configuraciones manuales complejas.
+Figura 9:Interfaz de Laragon.
+Nota: Captura de la interfaz de Laragon que muestra las herramientas y servicios disponibles para la gestión del entorno de desarrollo local, facilitando la administración de servidores web, bases de datos y aplicaciones durante el proceso de desarrollo. Fuente: https://laragon.org/images/docs/laragon-ui.png [IMG:media/image11.png]
+Administración de datos
+Base de datos.
+La base de datos es la estructura que permite almacenar la información del sistema de manera organizada. Según Silberschatz et al. (2020), una base de datos es “una colección de datos interrelacionados y un conjunto de programas para acceder a esos datos” (p. 1).
+Asimismo, Coronel y Morris (2022) señalan que su importancia radica en que “permite transformar los datos dispersos en información valiosa y estructurada, sirviendo como la base para la toma de decisiones estratégicas dentro de una organización” (p. 14). De esta manera, la base de datos constituye el núcleo de la aplicación, al centralizar la información en un único punto de acceso.
+Modelo de datos relacional.
+El modelo relacional es el estándar más utilizado para estructurar datos mediante tablas compuestas por filas y columnas. Según Ramakrishnan y Gehrke (2021), este modelo “organiza los datos del mundo real como una colección de relaciones matemáticas, simplificando la representación de las entidades y sus conexiones” (p. 42).
+De igual manera, Codd (2020) lo define como “un enfoque de organización de datos basado en la teoría de conjuntos, donde toda la información se representa visualmente como valores en tablas estructuradas” (p. 105). De esta manera, los registros se vinculan entre sí mediante claves, manteniendo la información ordenada y consistente.
+Normalización de bases de datos.
+La normalización es un proceso que descompone tablas complejas para evitar anomalías en el almacenamiento de la información. Según Mannino (2021), la normalización es “una técnica formal que evalúa los esquemas de las tablas basándose en sus dependencias funcionales para reducir la redundancia de datos” (p. 210). Aunque existen varias formas normales, en la práctica la Tercera Forma Normal (3FN) es suficiente para la mayoría de las bases de datos relacionales, ya que elimina la redundancia sin afectar el rendimiento del sistema.
+Figura 10:Normalización de Bases de Datos: 1NF, 2NF y 3NF.
+[IMG:media/image12.jpeg]
+Nota: Gráfico que ilustra el proceso de normalización de bases de datos mediante la Primera Forma Normal (1NF), Segunda Forma Normal (2NF) y Tercera Forma Normal (3NF), mostrando cómo se organizan los datos para reducir la redundancia y mejorar la integridad de la información. Fuente:
+https://bookdown.org/paranedagarcia/database/images/db-3fn.jpg
+Sistema gestor de bases de datos (SGBD).
+Un SGBD es el software que centraliza el control y el acceso a la información almacenada. Según Elmasri y Navathe (2021), un sistema gestor de bases de datos es “una colección de programas que permite a los usuarios crear, mantener y controlar el acceso a una base de datos de manera segura y eficiente” (p. 4).
+Asimismo, Mannino (2021) señala que entre sus funciones principales se encuentran la definición de estructuras mediante el lenguaje DDL, la manipulación de registros mediante el lenguaje DML, el control de la concurrencia entre usuarios, la recuperación ante fallos y la gestión de permisos (p. 55). De esta manera, el SGBD garantiza la seguridad y consistencia de la información del sistema.
+MySQL.
+MySQL es un sistema de gestión de bases de datos relacionales de código abierto, ampliamente utilizado en el desarrollo web. Según Oracle (2023), es “un sistema de gestión de bases de datos relacionales multihilo, de alto rendimiento y robusto, diseñado específicamente para integrarse con aplicaciones web que exigen escalabilidad y velocidad” (p. 12).
+Entre sus ventajas, Oracle (2024) destaca la reducción de costos por ser de código abierto, su alto rendimiento en aplicaciones web y su integración nativa con PHP. Por estas características, MySQL fue utilizado como gestor de base de datos del presente proyecto.
+Figura 11:Logotipo Oficial de MySQL
+[IMG:media/image13.png]
+Nota: Gráfico que representa el logotipo del sistema de gestión MySQL, una herramienta basada en el modelo relacional que permite almacenar, organizar y consultar grandes volúmenes de datos mediante el lenguaje SQL, optimizando la integridad y el rendimiento del backend de la aplicación. Fuente: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIZdLiH4KPs2fGMX5N5GLH0Qj3UJxQxTiWVH6nx7Gmow&s
+CAPÍTULO IIIPROPUESTA DE INNOVACIÓN O SOLUCIÓN DEL PROBLEMA
+CAPÍTULO III: PROPUESTA DE INNOVACION O SOLUCION DEL PROBLEMA
+En el presente capítulo se describe el proceso de desarrollo del Sistema Web para la Gestión Administrativa de la Asociación de Agua Potable y Alcantarillado Isinuta, utilizando el marco de trabajo ágil Scrum, el cual permite organizar el desarrollo mediante iteraciones denominadas Sprint, garantizando una planificación adecuada, seguimiento continuo y entrega progresiva de funcionalidades.
+Definición de roles
+El estudiante (Javier Mercado Huerta) desempeña el rol de Product Owner y Developer, debido a que es responsable de recopilar los requerimientos del cliente, priorizar las funcionalidades del sistema, planificar cada Sprint e implementar cada uno de los módulos del sistema web.
+El Tutor (Ing. Grover Ramírez Zelada) desempeña el rol de Scrum Master, siendo responsable de supervisar el cumplimiento de la metodología Scrum, realizar el seguimiento del desarrollo del proyecto y verificar tanto el documento como la implementación del sistema.
+Planificación
+Especificación de usuarios.
+Presidente: revisa la información registrada por la secretaria y consulta deudas, recibos, el estado de cuenta de los lotes, multas, OTB, servicios, trabajos y el reporte de ingresos. Crea y administra los usuarios y los roles, y asigna las funciones de cada rol.
+Secretaria: registra y actualiza afiliados, OTB, tipos de afiliación, servicios con sus tarifas por categoría, trabajos de los afiliados, pagos y multas. Consulta e imprime el reporte de ingresos, consulta el reporte de deudas y transfiere un lote a un nuevo titular cuando el lote no tiene deudas
+Determinación de esfuerzo.
+La estimación del esfuerzo de las historias de usuario del sistema web se realizó con la técnica Planning Poker, asignando valores según la complejidad funcional y el tiempo requerido para su implementación. Esta estimación permitió organizar las actividades de cada Sprint y planificar el desarrollo del proyecto.
+Tabla 1: Planning Poker, Estimación de esfuerzo
+Tamaño
+Puntos
+Tiempo (Dia)
+XtraSmall (XS)
+1
+2
+Small (S)
+2
+4
+Medium (M)
+3
+6
+Large (L)
+5
+8
+XtraLarge (XL)
+8
+10
+XtraXtraLarge (XXL)
+13
+15
+Nota: La estimación de esfuerzo en tamaño y días fue consensuada y analizada por todo el equipo Scrum.
+Historias de usuario.
+A continuación, se presentan los requerimientos o necesidades mediante el artefacto de Historias de usuario, donde se especifican datos concretos y precisos del manejo del negocio.
+Tabla 2:Historia de usuario "Gestionar Roles"
+Nombre de historia:
+Gestionar Roles
+HU-01
+Como
+Presidente
+Necesito
+Gestionar los roles de usuarios del sistema
+Para
+Restringir las opciones del sistema de acuerdo con los permisos asignados a cada rol.
+Validación:
+Controlar la duplicidad de datos por nombre de rol.
+Seleccionar las funciones por rol
+Aplicar filtro multicampo para la búsqueda de roles.
+Algunos roles no podrán ser eliminados
+Permitir actualizar la información de los roles registrados.
+Prioridad:
+Alta
+Estimación de esfuerzo:
+S
+Nota: Esta historia de usuario permite gestionar los roles de los usuarios del sistema, asignando las funciones correspondientes para controlar el acceso a las diferentes opciones y garantizar una adecuada administración de los permisos.
+Tabla 3:Historia de usuario "Gestionar Usuarios".
+Nombre de historia:
+Gestionar Usuarios
+HU-02
+Como
+Presidente
+Necesito
+Gestionar los usuarios del sistema
+Para
+Tener información organizada y controlar los accesos al sistema
+Validación:
+Se debe iniciar sesión con correo electrónico o CI y contraseña.
+Controlar la duplicidad de datos por CI.
+Privar letras en los campos numéricos.
+Aplicar filtro multicampo para la búsqueda de usuarios.
+Dar permiso para iniciar sesión mediante estado activo o inactivo.
+Incluir paginación para dividir grandes cantidades de datos de usuarios
+Seleccionar rol obligatoriamente
+El CI debe tener 8 dígitos.
+Registrar el teléfono con código de país.
+Controlar la duplicidad por correo, CI y teléfono.
+La contraseña debe tener mínimo 8 caracteres y confirmarse.
+Registrar fecha de ingreso y fecha final (obligatoria al desactivar al usuario).
+Verificar el correo electrónico mediante un código enviado al correo.
+Prioridad:
+Alta
+Estimación de esfuerzo:
+M
+Nota: Historia de usuario que permite gestionar el registro y control de acceso de los usuarios al sistema, asegurando autenticación segura, asignación de roles y control de estado.
+Tabla 4: Historia de usuario “Gestionar Afiliados”.
+Nombre de historia:
+Gestionar Afiliados
+HU-03
+Como
+Secretaria
+Necesito
+Gestionar información de los afiliados
+Para
+Tener organizada la información en la asociación
+Validación:
+Debe mostrar la lista completa de afiliados.
+Verificar que no exista duplicidad de datos por CI.
+Controlar campos numéricos como teléfono y CI.
+Se debe aplicar filtros multicampo para facilitar la búsqueda.
+Permitir actualizar la información del afiliado
+Incluir paginación para dividir grandes cantidades de datos de afiliados
+Un afiliado puede tener varios lotes; cada lote tiene OTB, número de lote, dirección, categoría, tipos de afiliación y servicios.
+No se permite repetir el número de lote.
+Registrar la fecha de afiliación, la forma de pago (al contado o a plazo) y el saldo pendiente.
+Estado del afiliado y del lote: activo, cortado o baja. El corte por mora anual (12 meses vencidos) se aplica por lote; si el afiliado tiene varios lotes, cada uno se corta o reactiva de forma independiente.
+Prioridad:
+Alta
+Estimación de esfuerzo:
+S
+Nota: Se gestiona y organiza la información de los afiliados de la asociación, asegurando su correcto registro, evitando duplicidades y facilitando su consulta. Los datos de afiliación (OTB, número de lote, categoría y servicios) se registran en el mismo módulo de afiliados.
+Tabla 5:Historia de usuario “Gestionar Tipos de Afiliación”.
+Nombre de historia:
+Gestionar Tipos de Afiliación
+HU-04
+Como
+Secretaria
+Necesito
+Gestionar los tipos de afiliación disponibles
+Para
+Definir los costos de afiliación por cada tipo de servicio, con modalidad al contado y a plazo
+Validación:
+Se debe mostrar la lista de los tipos de afiliación registrados (Agua, Alcantarillado, etc.).
+Permitir registrar un nuevo tipo indicando nombre, descripción, monto al contado, monto a plazo y estado.
+Verificar que no existan registros duplicados por nombre.
+El nombre y al menos un monto (contado o plazo) deben ser campos obligatorios.
+Permitir actualizar la información del tipo de afiliación.
+Permitir cambiar estado de activo o inactivo.
+Generar un código único automáticamente a partir del nombre.
+Las afiliaciones base de agua y alcantarillado no se pueden eliminar, solo desactivar.
+Prioridad:
+Alta
+Estimación de esfuerzo:
+S
+Nota: Esta historia de usuario permite gestionar los tipos de afiliación que determinan los costos que debe pagar un afiliado al afiliarse a un servicio (afiliación de agua, afiliación de alcantarillado, etc.), diferenciando el monto al contado y el monto a plazo.
+Tabla 6: Historia de usuario “Gestionar OTB”
+Nombre de historia:
+Gestionar OTB
+HU-05
+Como
+Secretaria
+Necesito
+Gestionar la información de las OTB
+Para
+Mantener organizada y actualizada la información de los sectores, barrios o sindicatos.
+Validación:
+Se debe mostrar la lista general de las OTB registradas.
+Permitir registrar una nueva OTB indicando su nombre, descripción y estado.
+Verificar que no existan registros duplicados por nombre de OTB.
+El nombre de la OTB debe ser un campo obligatorio.
+Permitir actualizar la información de una OTB registrada.
+Permitir modificar el estado de la OTB entre activa e inactiva.
+Mostrar la cantidad de afiliados asociados a cada OTB.
+Aplicar filtros o búsqueda para facilitar la localización de una OTB.
+Mostrar un mensaje de confirmación al registrar, actualizar o estado de activo o inactivo una OTB.
+Solo se puede eliminar una OTB que no tenga afiliados asociados.
+Prioridad:
+Alta
+Estimación de esfuerzo:
+S
+Nota: Esta historia de usuario permite gestionar la información de las OTB registradas en la asociación, facilitando su registro, actualización, consulta y organización, además de mantener un control sobre los afiliados asociados a cada OTB.
+Tabla 7: Historia de usuario “Gestionar Servicios por categoría”
+Nombre de historia:
+Gestionar Servicios por categoría
+HU-06
+Como:
+Secretaria.
+Necesito:
+Gestionar la información de los servicios y sus tarifas mensuales por categoría.
+Para:
+Mantener organizada la información de los servicios brindados por la asociación y definir el cobro mensual según el tipo de uso del inmueble.
+Validación:
+Se debe mostrar la lista de los servicios con su tarifa por cada categoría y la cantidad de lotes.
+Registrar servicios de agua potable y alcantarillado.
+Cada servicio debe registrar nombre, tipo, estado y tarifa mensual por categoría (Domiciliar y Comercial).
+Al modificar la tarifa de una categoría se actualizan las tarifas de los lotes de esa categoría.
+Gestionar las categorías del inmueble (Domiciliar y Comercial) dentro del módulo de servicios: registrar, actualizar y activar o desactivar cada categoría.
+Verificar que no existan servicios duplicados por nombre ni más de un servicio de agua potable o de alcantarillado.
+Los servicios de agua potable y alcantarillado no se pueden eliminar.
+Se debe aplicar filtros por nombre, tipo y estado.
+Prioridad:
+Alta
+Estimación de esfuerzo:
+XL
+Nota: Esta historia de usuario permite gestionar los servicios que brinda la Asociación de Agua Potable y Alcantarillado Isinuta y sus tarifas mensuales según la categoría del inmueble.
+Tabla 8: Historia de usuario “Gestionar Trabajos”
+Nombre de historia:
+Gestionar Trabajos
+HU-07
+Como
+Secretaria
+Necesito
+Registrar el trabajo de la OTB que indica la secretaria y llamar la lista por nombre del afiliado
+Para
+Registrar quiénes estuvieron presentes y generar la multa de los lotes que no cumplieron
+Validación:
+La secretaria selecciona la OTB, la fecha, el tipo de trabajo (limpieza u otro) y el monto de la multa.
+El sistema muestra la lista de los afiliados de esa OTB, uno por nombre.
+En cada fila se detalla el número de lote, la OTB y los tipos de servicio del afiliado.
+La secretaria marca el nombre del afiliado presente.
+El afiliado sin marca queda como falta. Cada uno de sus lotes en esa OTB recibe la multa por el monto definido en ese trabajo.
+La multa guarda la fecha de inicio y la descripción del motivo. El motivo puede ser limpieza u otro trabajo.
+El cobro de esa multa emite un recibo individual de ese lote, con la OTB del afiliado y la descripción.
+Se debe poder consultar los trabajos por OTB, fecha y tipo.
+Prioridad:
+Alta
+Estimación de esfuerzo:
+M
+Nota: Esta historia permite llamar la lista por nombre de los afiliados de la OTB que indica la secretaria y registrar la multa de cada lote del afiliado que faltó.
+Tabla 9: Historia de usuario “Gestionar Pagos”
+Nombre de historia:
+Gestionar
+Pagos
+HU-08
+Como
+Secretaria
+Necesito
+Gestionar información de los pagos
+Para:
+Tener información precisa de cobros, deudas y saldos de los afiliados
+Validación:
+Se debe registrar pagos de agua potable.
+Se debe registrar pagos de alcantarillado.
+Permitir cobrar uno o varios meses de agua y alcantarillado, multas y abonos parciales de la afiliación.
+Se debe aplicar un filtro para realizar búsquedas.
+Se debe mostrar un recibo por cada pago realizado.
+El recibo debe mostrar el número de comprobante del pago realizado.
+El monto mensual se toma de la tarifa del servicio según la categoría del lote.
+No se permite cobrar dos veces el mismo mes del mismo lote.
+Cuando el cobro incluye conceptos de distinto propósito, se emite un recibo separado por cada uno.
+El recibo se puede exportar a Excel y imprimir.
+Método de pago: efectivo, transferencia o QR.
+Se debe poder consultar el estado de cuenta del lote, con los meses del servicio, las multas, el saldo de afiliación, los recibos y el total adeudado.
+Permitir transferir el lote a un nuevo titular solo cuando el lote no tiene deudas (cuotas, multas y saldo de afiliación); el nuevo titular se busca por CI o se registra, el titular anterior conserva sus otros lotes, sus recibos siguen a su nombre y se guarda el historial de titulares.
+Prioridad:
+Alta
+Estimación de esfuerzo:
+XL
+Nota: En la tabla se muestran los requerimientos para la gestión de pagos de agua potable y alcantarillado, incluyendo la emisión de recibo por cada pago realizado y la consulta del estado de cuenta del lote y su transferencia a un nuevo titular cuando no tiene deudas.
+Tabla 10: Historia de usuario “Gestionar Multas”.
+Nombre de historia:
+Gestionar Multas
+HU-09
+Como:
+Secretaria
+Necesito:
+Registrar y consultar multas de los afiliados
+Para
+Aplicar sanciones por mora y por inasistencia al trabajo, y realizar su seguimiento
+Validación:
+Se debe mostrar la lista de multas registradas.
+Permitir registrar multas manualmente.
+Permitir generar multas automáticas por mora según las reglas de la asociación.
+Asociar la multa al lote del afiliado. La multa por inasistencia sale del pase de lista del trabajo.
+Se debe aplicar filtros por estado y búsqueda por CI para facilitar la consulta.
+Multa trimestral de Bs 50 al acumular 3 meses vencidos; se acumula Bs 50 → Bs 100 → Bs 150 (mora anual). El corte del servicio aplica por lote a los 12 meses vencidos. Cada tramo se genera una sola vez por el período que corresponde.
+Una vez generada, la multa de mora permanece pendiente hasta que se cobre; pagar los meses atrasados no la retira.
+Si en el pase de lista el afiliado pasa a presente, se retiran las multas pendientes de ese trabajo.
+Los montos y los meses se leen de la opción Configuración ubicada dentro del módulo Multas. Los valores iniciales son Bs 50 cada 3 meses (acumulable hasta Bs 150 anual) y 12 meses para el corte del servicio por lote.
+Prioridad:
+Alta
+Estimación de esfuerzo:
+XL
+Nota: La multa manual, la multa por mora y la multa por inasistencia se consultan en el módulo de multas. No hay un botón para anular una multa a mano. La multa de mora solo deja de estar pendiente cuando se cobra; la de trabajo se retira si el afiliado queda presente en la lista.
+Tabla 11: Historia de usuario “Obtener reportes”
+Nombre de historia:
+Obtener reportes
+HU-10
+Como
+Presidente / secretaria
+Necesito
+Obtener el reporte de ingresos y el reporte de deudas pendientes
+Para
+Tener el resumen de lo cobrado y de lo que aún se debe, y apoyar la toma de decisiones de la mesa directiva
+Validación:
+Se debe mostrar los pagos registrados de una fecha inicial a una fecha final.
+Mostrar los ingresos agrupados por concepto, con subtotal por concepto y total general.
+Se debe permitir filtrar por afiliado, por concepto y por categoría.
+El reporte de ingresos debe tener el botón Excel y el botón Imprimir / PDF.
+El reporte de deudas pendientes se consulta desde el Panel y desde el módulo de Reportes. Muestra lote, afiliado, OTB, cuotas, multas, saldo de afiliación y total, de mayor a menor. Tiene botón de Excel y de impresión.
+Las multas y las faltas de trabajo cobradas aparecen dentro del reporte de ingresos. No existe un reporte separado de recargos.
+Solo la secretaria y el presidente, según sus permisos de reportes, entran al módulo.
+Prioridad:
+Alta
+Estimación de esfuerzo:
+XL
+Nota: El módulo Reportes muestra las tarjetas de Ingresos y de Deudas. El reporte de deudas pendientes se abre desde el Panel y también desde Reportes.
+Product Backlog.
+Se determina la pila de producto en base a las historias de usuario anteriores, estableciendo el esfuerzo y la cantidad de Sprint, incluyendo el código de cada historia, su descripción, el esfuerzo estimado (tamaño) y el tiempo necesario en días para su implementación. Permite planificar y organizar el desarrollo del sistema de forma ágil y estructurada.
+Tabla 12: Product Backlog
+Sprint
+Código
+Nombres de las Historias de Usuario
+Esfuerzo (Tamaño)
+Tiempo (Días)
+1
+HU-01
+Gestionar Roles
+S
+4
+HU-02
+Gestionar Usuarios
+M
+6
+HU-03
+Gestionar Afiliados
+S
+4
+HU-04
+Gestionar Tipos de afiliación
+S
+4
+2
+HU-05
+Gestionar OTB
+S
+4
+HU-06
+Gestionar Servicios por categoría
+XL
+10
+3
+HU-07
+Gestionar Trabajos
+M
+6
+HU-08
+Gestionar Pagos
+XL
+10
+HU-09
+Gestionar Multas
+XL
+10
+4
+HU-10
+Obtener reportes
+XL
+10
+Tiempo Estimado (Días):
+68
+Nota: La planificación del Sprint y la estimación del tiempo se realizaron en base al tamaño del esfuerzo de cada historia de usuario.
+Diagrama de componentes.
+El diagrama de componentes muestra la arquitectura del sistema, la organización de los componentes, sus relaciones y dependencias.
+Figura 12: Diagrama de componentes del proyecto.
+[IMG:media/image14.png]
+Nota: El diagrama muestra los componentes de diseño como vista, controlador, modelo y que estos se encuentran relacionados.
+Ejecución del Sprint 1
+Definición de hecho.
+El Sprint 1 se considera terminado cuando el sistema permita: gestionar roles con selección de funciones y control de duplicidad, gestionar usuarios con inicio de sesión por correo electrónico o CI y contraseña, estado activo/inactivo y asignación de rol, gestionar afiliados con sus lotes y gestionar tipos de afiliación con montos al contado y a plazo.
+Sprint Backlog.
+Lista de tareas.
+La siguiente tabla detalla la lista de tareas específicas asociadas a las historias de usuario, roles, afiliados y tipos de afiliación. Para cada historia, se identifican actividades clave como la implementación de funcionalidades CRUD, aplicación de filtros multicampo, control de acceso por roles, verificación de duplicidad de datos, y validación de campos.
+Tabla 13: Sprint Backlog 1.
+Id
+Historia de Usuario
+Lista de Tareas
+Tiempo (Días)
+HU-01
+Gestionar Roles
+Realizar CRUD de Roles, modelo, controlador y base de datos.
+2
+Diseñar interfaz para registrar y listar roles.
+1
+Validar campos obligatorios y duplicidad de datos.
+1
+HU-02
+Gestionar Usuarios
+Realizar el CRUD de Usuarios, diseño del modelo, controlador y base de datos.
+1
+Diseñar las interfaces de registros, edición e inicio de sesión,
+1
+Validar duplicidad de información y aplicar filtros multicampo
+1
+Implementar inicio de sesión mediante correo electrónico o CI y contraseña
+1
+Aplicar estado activo e inactivo de usuarios
+1
+Validar campos obligatorios y restricciones de datos
+1
+HU-03
+Gestionar Afiliados
+Realizar el CRUD de afiliados, incluyendo modelo, controlador y base de datos.
+1
+Diseñar las interfaces para registrar, editar y consultar afiliados.
+1
+Validar la duplicidad de información mediante el número de CI y
+Controlar los campos numéricos como CI y teléfono.
+1
+Implementar filtros multicampo y paginación.
+Realizar pruebas funcionales del módulo.
+1
+HU-04
+Gestionar tipos de afiliación
+Realizar el CRUD de tipos de afiliación, incluyendo modelo, controlador y base de datos.
+1
+Diseñar interfaz para registrar, editar y listar tipos de afiliación.
+1
+Validar duplicidad por nombre y campos obligatorios.
+1
+Implementar estado activo e inactivo.
+1
+Nota: La tabla presenta las tareas necesarias para el Sprint 1: roles, usuarios, afiliados y tipos de afiliación.
+Diagrama de casos de uso.
+El siguiente diagrama de casos de uso del Sprint 1 muestra las funcionalidades de roles, usuarios, afiliados, lotes y tipos de afiliación.
+Figura 13: Diagrama de casos de uso “Sprint 1”.
+[IMG:media/image15.png]
+Nota:  El diagrama muestra los casos de uso del Sprint 1: roles, usuarios, afiliados, lotes y tipos de afiliación.
+Diagrama de clases.
+El diagrama de clases representa el diseño del Sprint 1, estableciendo relaciones entre Usuario, Rol, Afiliado, Lote Afiliado y Tipo de Afiliación.
+Figura 14: Diagrama de clases “Sprint 1”.
+[IMG:media/image16.png]
+Nota: El diagrama muestra las clases del Sprint 1: Rol, Usuario, Afiliado, Lote Afiliado, Tipo Afiliación.
+Implementación.
+En la etapa de implementación del primer Sprint se desarrollaron las interfaces necesarias para la gestión de roles, usuarios, afiliados y tipos de afiliación.
+Figura 15: Inicio de sesión de la secretaria.
+[IMG:media/image17.png]
+Nota: Interfaz de acceso al sistema con correo y contraseña.
+Figura 16: Registro de usuarios.
+[IMG:media/image18.png]
+Nota: Interfaz para registrar nuevos usuarios en el sistema.
+Figura 17: Lista de usuarios registrados.
+[IMG:media/image19.png]
+Nota: Interfaz que muestra la información y estado de los usuarios registrados.
+Figura 18: Lista de Roles.
+[IMG:media/image20.png]
+Nota: Interfaz que muestra los roles registrados en el sistema.
+Figura 19: Lista de afiliados.
+[IMG:media/image21.png]
+Nota: Interfaz que muestra los afiliados registrados, con su lote, OTB y estado.
+Figura 20: Tipos de afiliación.
+[IMG:media/image22.png]
+Nota: Interfaz que muestra los tipos de afiliación y el monto al contado y a plazo de agua y alcantarillado.
+Sprint Review.
+En este Sprint Review se realizaron pruebas sobre la gestión de roles, usuarios, afiliados y tipos de afiliación, validando los datos de entrada según el proceso.
+Tabla 14: Pruebas de funcionamiento del “Sprint 1”
+Id
+Descripción
+Datos De Entrada
+Salida Esperada
+Resultado
+1
+Registrar Usuarios
+Se ingresan los datos:
+• nombres: Carlos
+• apellidos: Mercado Huerta
+• ci: 87654321
+• teléfono: +591 72541122
+• email: carlos.admin@isinuta.com
+• password: adminIsinuta2026
+• confirmación: adminIsinuta2026
+• rol: secretaria
+• fechaIngreso: 29/06/2026
+• estado: Activo
+Mensaje: “Usuario creado correctamente.”
+Muestra los datos del nuevo usuario en la lista de forma correcta.
+2
+Editar Usuarios
+Se modifican los siguientes campos:
+• nombres: Carlos
+• apellidos: Mercado Huerta
+• ci: 87654321
+• teléfono: +591 72541122
+• email: secretaria@isinuta.com
+• fechaIngreso: 29/06/2026
+• estado: Inactivo
+• fechaFinal: 30/06/2026
+• rol: secretaria
+Mensaje: “Usuario actualizado correctamente.”
+Se muestra la lista de usuarios reflejando los cambios en los campos email, estado (Inactivo) y fecha final.
+3
+Registrar rol
+Se ingresa el dato:
+• nombre: secretaria
+Mensaje:
+“Rol creado correctamente.”
+Muestra el rol registrado en la lista de roles del sistema.
+4
+Inicio
+de Sesión
+Se ingresan las credenciales:
+•CorreoElectronico: carlos.admin@isinuta.com
+• Contraseña: adminIsinuta2026
+El Botón
+de iniciar
+Sesión carga correctamente.
+Redirecciona y muestra la página de bienvenida con el menú administrativo correspondiente a su rol.
+5
+Registrar
+Tipo de
+Afiliaciones
+Nombre: Afiliación de agua potable
+Monto al contado: Bs 3500 Monto a plazo: Bs 3800  Estado: Activo
+“Tipo de afiliación creado correctamente.”
+El tipo se muestra correctamente en la lista.
+6
+Registrar Afiliado
+Nombres: Carlos
+Apellidos: Mercado Huerta
+CI: 87654321
+Teléfono: 72541122
+OTB: Barrio 21
+Dirección: Barrio Centro Isinuta
+Número de lote: 1
+Categoría: Domiciliar
+Fecha de afiliación: 29/06/2026
+Forma de pago: Al contado
+Estado: Activo
+“Afiliado registrado exitosamente”.
+El afiliado se muestra en la lista con su OTB y número de lote.
+Nota: Cada entrada de datos tiene su resultado de acuerdo a su uso correspondiente en el sistema.
+Ejecución del Sprint 2
+La ejecución del Sprint 2 se enfoca en la implementación de las funcionalidades de OTB y servicios por categoría. El proceso comienza con la definición de hecho y continúa según lo planificado en el Sprint Backlog, donde cada historia de usuario se desglosa en una lista de tareas específica para su implementación.
+Definición de Hecho.
+El Sprint 2 se considera terminado cuando el sistema permita: gestionar las OTB con control de duplicidad por nombre, estado activo/inactivo y cantidad de afiliados asociados, y gestionar los servicios de agua potable y alcantarillado con sus tarifas mensuales por categoría, actualizando la tarifa de los lotes de cada categoría. Además, deben aplicarse las validaciones definidas en cada historia de usuario.
+Sprint Backlog.
+Lista de tareas.
+Tabla 15: Sprint Backlog 2
+Id
+Historia de Usuario
+Lista de Tareas
+Tiempo (Días)
+HU-05
+Gestionar OTB
+Realizar el CRUD de OTB, incluyendo modelo, controlador y base de datos.
+1
+Diseñar las interfaces para registrar, editar y listar OTB.
+1
+Implementar la búsqueda de OTB.
+1
+Validar la duplicidad del nombre de la OTB.
+1
+HU-06
+Gestionar Servicios por categoría
+Realizar el CRUD de servicios, modelo, controlador y base de datos.
+2
+Diseñar la interfaz para registrar, editar y consultar servicios.
+2
+Registrar servicios de agua potable y alcantarillado.
+2
+Configurar las tarifas mensuales por categoría y su aplicación a los lotes.
+2
+Validar duplicidad de servicios e implementar filtros.
+1
+Realizar pruebas funcionales del módulo.
+1
+Nota: La tabla presenta las tareas necesarias para el Sprint 2: OTB y servicios por categoría.
+Diagrama de Casos de Uso.
+El siguiente diagrama de casos de uso del Sprint 2 representa las funcionalidades de gestión de OTB, categorías y servicios por categoría, permitiendo a la secretaria registrar, consultar, editar y administrar la información correspondiente.
+Figura 21: Diagrama de casos de uso del Sprint 2.
+[IMG:media/image23.png]
+Nota:  El diagrama muestra los casos de uso del Sprint 2: gestión de OTB y de servicios por categoría.
+Diagrama de Clases.
+La figura muestra la estructura de clases del Sprint 2, con la relación entre Servicio y Categoría, y la clase Otb.
+Figura 22: Diagrama de clases del Sprint 2.
+[IMG:media/image24.png]
+Nota: El diagrama muestra las clases del Sprint 2: Servicio, Categoría y Otb.
+Implementación.
+En la etapa de implementación del segundo Sprint se desarrollaron las interfaces para la gestión de categorías, la actualización de servicios y el registro de OTB.
+Figura 23: Lista de categorías.
+[IMG:media/image25.png]
+Nota: Interfaz que muestra las categorías Domiciliar y Comercial, la cantidad de lotes y el estado de cada una.
+Figura 24: Actualización de servicio.
+[IMG:media/image26.png]
+Nota: Interfaz para actualizar un servicio, su estado y la tarifa mensual según la categoría del inmueble.
+Figura 25: Lista de OTB.
+[IMG:media/image27.png]
+Nota: Interfaz que muestra las OTB registradas en la asociación.
+Sprint Review.
+En este Sprint Review se realizaron pruebas sobre la gestión de OTB y servicios por categoría, validando los datos de entrada según el proceso.
+Tabla 16: Pruebas de funcionamiento del “Sprint 2”
+Id
+Descripción
+Datos De Entrada
+Salida Esperada
+Resultado
+1
+Registrar OTB
+Nombre: Barrio 21 · Descripción: Barrio Centro Isinuta · Estado: Activa
+“OTB creada correctamente.”
+La OTB registrada se muestra correctamente en la lista de OTB.
+2
+Registrar servicio
+Servicio: Agua potable · Tipo: Agua potable · Estado: Activo · Categoría: Domiciliar · Tarifa/mes: Bs 8
+“Servicio creado correctamente.”
+El servicio se muestra en la lista con la tarifa de la categoría.
+3
+Actualizar tarifa
+por categoría
+Servicio: Agua potable · Categoría: Comercial · Tarifa/mes: Bs 17
+“Servicio actualizado correctamente.”
+La tarifa se actualiza en la categoría y en los lotes de esa categoría.
+Nota: Cada entrada de datos tiene su resultado de acuerdo a su uso correspondiente en el sistema.
+Ejecución del Sprint 3
+La ejecución del Sprint 3 se enfoca en la implementación de las funcionalidades de trabajos de los afiliados, pagos y multas. El proceso comienza con la definición de hecho y continúa según lo planificado en el Sprint Backlog, donde cada historia de usuario se desglosa en una lista de tareas específica para su implementación.
+Definición de Hecho.
+El Sprint 3 se considera terminado cuando el sistema permita: registrar el trabajo de la OTB que indica la secretaria, definir el tipo de trabajo, la fecha de inicio, la descripción y el monto de la multa, mostrar la lista de afiliados de esa OTB con su número de lote, OTB y tipos de servicio, marcar los presentes por nombre y generar la multa de cada lote del afiliado que faltó; cobrar después esa multa en un recibo de caja de ese lote; gestionar pagos de servicio con recibo de ingreso para agua y alcantarillado, y recibo de caja para multas, afiliación y demás conceptos; consultar el estado de cuenta del lote; transferir el lote sin deudas a un nuevo titular, conservando el historial de titulares; registrar multas manualmente; generar multas automáticas por mora (Bs 50 trimestral acumulable a Bs 100 y Bs 150 anual, por lote), con corte del servicio a los 12 meses vencidos por lote, de modo que la multa de mora generada permanezca pendiente hasta su cobro; y, si el afiliado pasa a presente en la lista, retirar la multa pendiente de ese trabajo. Además, deben aplicarse validaciones para evitar cobrar dos veces el mismo mes del mismo lote y para consultar mediante filtros.
+Sprint Backlog.
+Lista de tareas.
+Tabla 17: Sprint Backlog 3
+Id
+Historia de Usuario
+Lista de Tareas
+Tiempo (Días)
+HU-07
+Gestionar Trabajos
+Registrar el trabajo con OTB, fecha, tipo y monto de la multa.
+1
+Cargar la lista de afiliados de la OTB, con número de lote, OTB y tipos de servicio.
+1,5
+Marcar por nombre a los afiliados presentes y generar la multa de cada lote del afiliado que faltó.
+2
+Diseñar la interfaz del pase de lista.
+1
+Realizar pruebas funcionales del módulo.
+0.5
+HU-08
+Gestionar Pagos
+Realizar el CRUD de pagos, modelo, controlador y base de datos.
+1
+Diseñar la interfaz para registrar y administrar pagos.
+1
+Registrar cobros de uno o varios meses, multas y abonos de afiliación.
+2
+Generar recibo por cada pago realizado.
+2
+Implementar filtros de búsqueda.
+1
+Implementar la consulta del estado de cuenta del lote, con los meses de cada servicio, las multas, el saldo de afiliación y los recibos.
+1
+Implementar la transferencia del lote sin deudas a un nuevo titular, buscado por CI o registrado, con el historial de titulares.
+1
+Realizar pruebas funcionales del módulo.
+1
+HU-09
+Gestionar Multas
+Realizar el registro y consulta de multas, incluyendo modelo, controlador y base de datos.
+2
+Diseñar la interfaz para registrar y consultar multas.
+2
+Implementar la generación automática de multas por mora (Bs 50 trimestral acumulable a Bs 100 y Bs 150 anual, por lote) y el corte del servicio a los 12 meses vencidos por lote.
+2
+Asociar las multas al afiliado y al lote correspondiente.
+1
+Implementar filtros por estado y búsqueda por CI.
+1
+Realizar pruebas funcionales del módulo.
+1
+Mantener la multa de mora pendiente hasta su cobro, e implementar el retiro de la multa de trabajo si el afiliado queda presente en la lista.
+1
+Nota: La tabla presenta las tareas necesarias para el Sprint 3: trabajos de los afiliados, pagos (incluidos el estado de cuenta y la transferencia del lote) y multas.
+Diagrama de casos de uso.
+El siguiente diagrama de casos de uso del Sprint 3 representa las funcionalidades de trabajos, pagos y multas. La secretaria registra trabajos, registra pagos con emisión de recibo, registra multas; el sistema genera multas automáticas por mora según las reglas de la asociación.
+Figura 26: Diagrama de casos de uso del Sprint 3.
+[IMG:media/image28.png]
+Nota: El diagrama muestra los casos de uso del Sprint 3: trabajos de los afiliados por OTB, pagos y multas.
+Diagrama de clases.
+Figura 27: Diagrama de clases del Sprint 3.
+[IMG:media/image29.png]
+Nota: El diagrama muestra las clases del Sprint 3: Trabajo, Asistencia, Multa, Pago y Pago Detalle.
+Implementación.
+En la etapa de implementación del tercer Sprint se desarrollaron las interfaces de trabajos de la OTB, pase de lista, cobranza, recibo y multas.
+Figura 28: Multa por mora generada automáticamente en el cobro.
+[IMG:media/image30.png]
+Nota: Interfaz de cobranza donde, al seleccionar el lote, el sistema muestra la multa por mora pendiente para agregarla al recibo de ese lote.
+Figura 29: Lista de trabajos.
+[IMG:media/image31.png]
+Nota: Interfaz que muestra el trabajo registrado de la OTB que indica la secretaria, con el tipo, la fecha de inicio, el monto de la multa y el acceso a la lista.
+Figura 30: Lista de asistencia del trabajo.
+[IMG:media/image32.png]
+Nota: Interfaz para pasar lista por nombre del afiliado. Se marca presente o falta, y se ven los lotes y servicios de esa OTB. La falta genera una multa en cada lote del afiliado.
+Figura 31: Registro de pago.
+[IMG:media/image33.png]
+Nota: Interfaz para registrar el pago de agua potable o alcantarillado del lote, mostrando la deuda, las cuotas y las multas pendientes.
+Figura 32: Recibo de pago.
+[IMG:media/image34.png]
+Nota: Recibo de ingreso generado por el sistema, con el número de comprobante, el afiliado, el concepto y el importe, y con los botones Imprimir y Excel.
+Figura 33: Lista de multas.
+[IMG:media/image35.png]
+Nota: Interfaz que muestra las multas de mora y de falta de trabajo, con motivo, monto y estado. La multa por inasistencia pendiente se retira si el afiliado pasa a presente en la lista; la multa por mora permanece pendiente hasta su cobro.
+Figura 34: Estado de cuenta del lote.
+[IMG:media/image36.png]
+Nota: Interfaz que muestra el estado de cuenta del lote, con las cuotas y multas pendientes, el saldo de afiliación, los meses pagados y el kardex de pagos.
+Sprint Review.
+En este Sprint Review se realizaron pruebas sobre trabajos de los afiliados, pagos, estado de cuenta, transferencia de lotes y multas, validando los datos de entrada según el proceso.
+Tabla 18: Pruebas de funcionamiento del "Sprint 3"
+Id
+Descripción
+Datos De Entrada
+Salida Esperada
+Resultado
+1
+Registrar Trabajo
+OTB: Barrio 21.
+Tipo: Limpieza.
+Monto de la multa: Bs 20. Fecha de inicio: 01/07/2026. Descripción: Limpieza.
+Un afiliado marcado presente y otro sin marca. El ausente tiene dos lotes en esa OTB.
+Se genera una multa por cada lote del afiliado que faltó, con la OTB, la fecha de inicio y la descripción. El afiliado presente no recibe multa.
+Las multas quedan pendientes en el módulo de multas. El recibo de cada lote se emite después, cuando la secretaria cobra esa multa. No sale el recibo al guardar la lista.
+2
+Registrar Pago
+Afiliado: Carlos Mercado Huerta · Concepto: Consumo de agua · Periodo: 07/2026 · Monto: Bs 8 · Método de pago: Efectivo
+“Pago registrado correctamente.”
+Se genera el recibo y el pago aparece en la lista.
+3
+Registrar multa
+Afiliado: Javier Mercado Huerta; Fecha: 10/08/2026; Motivo: Otro motivo; Monto: Bs 50
+"Multa registrada correctamente."
+La multa aparece en la lista en estado pendiente, asociada al afiliado.
+4
+Generar multas automáticas
+Afiliado con 3 meses de cuotas pendientes
+"Se generaron 1 multa(s) automáticas."
+Se registra la multa por mora trimestral de Bs 50.
+5
+Permanencia de la multa de mora tras regularizar meses
+Lote que tenía multa de Bs 50 pendiente por 3 meses vencidos y que, al pagarse esos meses, queda con menos de 3 meses vencidos en esa gestión.
+La multa de mora sigue pendiente; su saldo no se pone en 0 solo por haber pagado los meses.
+La multa permanece pendiente hasta que se cobre. No hay un botón Anular. Una multa ya pagada no se modifica.
+6
+Consultar estado de cuenta
+Lote 1 de Carlos Mercado Huerta · Gestión: 2026
+Se muestra el estado de cuenta del lote.
+Se ven los meses pagados, vencidos y pendientes de cada servicio, las multas, el saldo de afiliación, los recibos y el total adeudado.
+7
+Transferir lote
+Carlos Mercado Huerta con los lotes 1 y 2 · Lote 1 con meses vencidos · Nuevo titular: CI 76543210, María Quispe · Motivo: Venta del lote
+Con deuda: “No se puede transferir este lote todavía.” Sin deuda: “Transferencia registrada: el lote 1 ahora pertenece a María Quispe.”
+El lote 1 pasa a María Quispe, Carlos conserva el lote 2, sus recibos anteriores siguen a su nombre y el cambio aparece en el Historial de titulares.
+Nota: Cada entrada de datos tiene su resultado de acuerdo a su uso correspondiente en el sistema.
+Ejecución del Sprint 4
+La ejecución del Sprint 4 se enfoca en la implementación del módulo de reportes administrativos, que permite obtener el reporte de ingresos y el reporte de deudas pendientes. El proceso inicia con la definición de hecho y continúa con la planificación establecida en el Sprint Backlog, donde la historia de usuario se divide en actividades específicas para su desarrollo e implementación dentro del sistema web.
+Definición de hecho.
+El Sprint 4 se considera terminado cuando el sistema permita obtener el reporte de ingresos entre una fecha inicial y una fecha final, con subtotal por concepto y total general; filtrar los informes por afiliado, concepto y categoría; consultar el reporte de deudas pendientes desde el Panel y desde el módulo de Reportes; e imprimir o guardar en PDF y descargar en Excel el reporte de ingresos y el reporte de deudas.
+Sprint Backlog.
+Lista de tareas.
+La siguiente tabla detalla la lista de tareas específicas asociadas a la historia de usuario del Sprint 4, como la implementación del reporte de ingresos y el reporte de deudas, los filtros por rango de fechas, afiliado y concepto, el control de acceso por permisos y la exportación e impresión de los informes.
+Tabla 19: Sprint Backlog 4
+Id
+Historia de Usuario
+Lista de Tareas
+Tiempo (Días)
+HU-10
+Obtener reportes
+Implementar el filtro de informes por afiliado, concepto y categoría.
+1
+Diseñar la interfaz del panel de reportes.
+1
+Implementar el reporte de ingresos entre una fecha inicial y una fecha final, agrupado por concepto con subtotal y total general.
+2
+Implementar el reporte de deudas pendientes por afiliado (cuotas, multas y saldo de afiliación).
+2
+Incluir las multas cobradas dentro del reporte de ingresos.
+2
+Implementar el botón de impresión y la exportación de informes a Excel.
+1
+Realizar pruebas funcionales del módulo.
+1
+Nota: La tabla presenta las tareas necesarias para el Sprint 4: obtención de informes administrativos.
+Diagrama de casos de uso.
+El siguiente diagrama de casos de uso del Sprint 4 representa las funcionalidades del módulo de reportes, permitiendo al presidente y a la secretaria consultar, filtrar, imprimir y exportar el reporte de ingresos y el reporte de deudas pendientes.
+Figura 35: Diagrama de casos de uso del Sprint 4.
+[IMG:media/image37.png]
+Nota: El diagrama muestra los casos de uso del Sprint 4: informe de pagos por concepto y reporte de deudas.
+Diagrama de clases.
+La figura muestra la estructura de clases del Sprint 4, en la que el reporte administrativo consulta la información de Pago, Detalle de Pago, Afiliado, Lote y Multa para generar los informes.
+Figura 36: Diagrama de clases del Sprint 4.
+[IMG:media/image38.png]
+Nota: El diagrama muestra las clases del Sprint 4: Reporte Administrativo, Pago, Pago Detalle, Multa, Afiliado y Lote Afiliado.
+Implementación.
+En la etapa de implementación del cuarto Sprint se desarrollaron las interfaces del reporte de ingresos y del reporte de deudas pendientes.
+Figura 37: Reporte de ingresos por concepto.
+[IMG:media/image39.png]
+Nota: Interfaz que muestra los pagos de un rango de fechas agrupados por concepto, con filtros por categoría, afiliado y concepto, botón Excel e Imprimir / PDF.
+Figura 38: Reporte de deudas pendientes.
+[IMG:media/image40.png]
+Nota: Interfaz que muestra los afiliados con deuda pendiente, con cuotas, multas, saldo de afiliación y total.
+Sprint Review.
+En este Sprint Review se realizaron pruebas sobre el módulo de reportes, validando los filtros, los resultados y la exportación de los informes.
+Tabla 20: Pruebas de funcionamiento del "Sprint 4"
+Id
+Descripción
+Datos De Entrada
+Salida Esperada
+Resultado
+1
+Reporte de ingresos por fechas
+Desde: 01/07/2026; Hasta: 31/07/2026
+Se muestra el reporte del rango
+Los pagos aparecen agrupados por concepto, con subtotal y total general.
+2
+Informe por afiliado
+Afiliado: Carlos Mercado Huerta
+Se muestra el reporte filtrado
+Solo se listan los pagos del afiliado seleccionado.
+3
+Reporte de deudas
+Ingreso al reporte de deudas
+Lista de afiliados con deuda
+Se muestran las cuotas, multas, saldo y total de deuda, de mayor a menor.
+4
+Multas cobradas
+Desde: 01/07/2026; Hasta: 31/07/2026
+Concepto: Multas, del 01/07/2026 al 31/07/2026
+Esas multas aparecen en el grupo Multas, con su subtotal. No hay una pantalla de recargos.
+5
+Exportar a Excel
+Botón "Excel" del reporte de ingresos
+Descarga del archivo .xlsx
+El archivo contiene los mismos datos mostrados en pantalla.
+6
+Imprimir informe
+Botón "Imprimir / PDF"
+Vista de impresión
+El informe se imprime o se guarda en PDF correctamente.
+Nota: Cada entrada de datos tiene su resultado de acuerdo a su uso correspondiente en el sistema.
+CAPÍTULO IV CONCLUSIONES Y RECOMENDACIONES
+CAPÍTULO IV: CONCLUSIONES Y RECOMENDACIONES
+En el presente capítulo se describen las conclusiones a las que se llegó con el desarrollo del proyecto y se indican las recomendaciones para el buen uso, mantenimiento y mejora del sistema web.
+Conclusiones.
+Se desarrollaron los módulos de roles, usuarios, afiliados y tipos de afiliación, permitiendo registrar y validar la información de los afiliados y sus lotes, con control de acceso por rol y reducción de duplicidades por CI y número de lote.
+Se implementaron los módulos de OTB y de servicios por categoría, organizando los barrios o sindicatos y definiendo en un solo lugar las tarifas mensuales de agua potable y alcantarillado según Domiciliar y Comercial.
+Se codificaron los módulos de trabajos, pagos y multas, automatizando el pase de lista, el cobro con emisión de recibo, el estado de cuenta, la transferencia de lotes sin deudas y la generación de multas por mora.
+Se implementó el módulo de reportes, con el reporte de ingresos y el reporte de deudas pendientes, filtros, exportación a Excel e impresión, facilitando la toma de decisiones de la mesa directiva.
+Recomendaciones.
+Se recomienda capacitar a la secretaria y al presidente de la Asociación de Agua Potable y Alcantarillado Isinuta en el manejo adecuado del sistema web, con el propósito de garantizar un correcto registro, actualización y consulta de la información institucional.
+Se recomienda que el personal encargado mantenga actualizados los datos de los afiliados, tarifas, servicios, pagos y multas dentro del sistema, para asegurar que la información utilizada en la gestión administrativa sea confiable y oportuna.
+Se recomienda al presidente realizar cambios periódicos de contraseñas, asignar correctamente los permisos de usuario y efectuar copias de seguridad de la base de datos para evitar pérdida o acceso no autorizado a la información.
+Se recomienda que la secretaria y el presidente utilicen los módulos implementados de acuerdo con sus funciones asignadas, evitando registros duplicados y garantizando un mejor control de los procesos administrativos de la asociación.
+Se recomienda realizar mantenimiento periódico del sistema web e incorporar nuevas funcionalidades según las necesidades futuras de la Asociación de Agua Potable y Alcantarillado Isinuta, permitiendo mejorar continuamente la gestión administrativa.
+Se recomienda implementar el sistema en un servidor seguro con certificado HTTPS y mantener una infraestructura tecnológica adecuada para garantizar la disponibilidad del sistema y facilitar el acceso del personal autorizado.
+BIBLIOGRAFÍA
+Adam, T. (2023). Tailwind CSS: Diseño web moderno y utilitario. Barcelona: Alpha Books.
+Ambler, S. (2021). Visual Modeling with Enterprise Architect. Nueva York: Cambridge University Press.
+Basurto, N. M. (2020). Aplicación Informática para la Gestión Administrativa del “Hotel Paraíso” de la. JIPIJAPA – MANABÍ - ECUADOR: UNIVERSIDAD ESTATAL DEL SUR DE MANABÍ.
+Bean, M. (2022). Laravel Enterprise Applications. Birmingham: Packt Publishing.
+Codd, E. (2020). The Relational Model for Database Management. Reading, MA: Addison-Wesley.
+Coronel, C., & Morris, S. (2022). Database Systems: Design, Implementation, and Management. Boston: Cengage Learning.
+Coronel, C., & Morris, S. (2022). Database Systems: Design, Implementation, and Management. Boston: Cengage Learning.
+Crockford, D. (2022). JavaScript: The Good Parts and Beyond. Boston: O'Reilly Media.
+Date, C. (2021). An Introduction to Database Systems. Boston: Addison-Wesley.
+Date, C. (2021). An Introduction to Database Systems. Boston: Addison-Wesley.
+Deitel, P., & Deitel, H. (2021). Java How to Program, Early Objects. Nueva York: Pearson.
+Del Sole, A. (2022). Visual Studio Code Succinctly. Morrisville: Syncfusion.
+DuBois, P. (2020). MySQL CookBook. Sebastopol, CA: O'Reilly Media.
+Duckett, J. (2020). HTML and CSS: Design and Build Websites. Indianápolis: Wiley.
+Elmasri, R., & Navathe, S. (2021). Fundamentals of Database Systems. El Cairo: Pearson.
+Elmasri, R., & Navathe, S. (2021). Fundamentals of Database Systems. El Cairo: Pearson.
+Filipova, O. (2021). Building Applications with Vue.js. Birmingham: Packt Publishing.
+Flanagan, D. (2020). JavaScript: The Definitive Guide. Sebastopol, CA: O'Reilly Media.
+Fowler, M. (12 de Mayo de 2020). GUI Architectures and Patterns. Obtenido de MartinFowler.com: https://martinfowler.com/eaaDev/uiArchs.html
+Freeman, A. (2023). Pro Vue.js 3. Nueva York: Apress.
+Gasston, P., & Cederholm, D. (2022). The Book of CSS3. San Francisco: No Starch Press.
+Genero Bocco, M., Cruz Lamus, j., & Piattini Velthuis, M. (2014). METODOS DE INVESTIGACION EN INGENIERIA DEL SOFTWARE. España-calle jarama: RA-Ma,S.A.
+Gilmore, W. J. (2020). Beginning PHP and MySQL: From Novice to Professional. Nueva York: Apress.
+Gundersen, E. (2022). Next-Generation Tools for Web Engineers. Oslo: Software Quality Academic Press.
+Hanchett, E. (2022). Vue.js in Action. Shelter Island: Manning Publications.
+Haverbeke, M. (2021). Eloquent JavaScript. San Francisco: No Starch Press.
+Hernandez, M. (2020). Database Design for Mere Mortals. Boston: Addison-Wesley.
+IBM. (15 de Marzo de 2024). ¿Qué es una base de datos relacional? Obtenido de IBM Core Architecture Guides: https://www.ibm.com/es-es/topics/relational-database
+Jiménez de Parga, C., María Serrano, J., & Joyanes Aguilar, L. (2024). Análisis con UML (Modelización). Madrid, España: RA-MA Editorial.
+Kendall, K., & Kendall, J. (2020). Análisis y diseño de sistemas. Ciudad de México: Pearson.
+Kendall, K., & Kendall, J. (2020). Análisis y diseño de sistemas. Ciudad de México: Pearson.
+Laragon. (10 de Febrero de 2024). Laragon Features and Core Advantages. Obtenido de Laragon Official Documentation: https://laragon.org/docs/
+Larman, C. (2022). Applying UML and Patterns. Upper Saddle River: Prentice Hall.
+Lerdorf, R. (2022). Programming PHP: Creating Dynamic Web Pages. Sebastopol, CA: O'Reilly Media.
+Letelier, P., & Penadés, M. C. (2006). Metodologías ágiles para el desarrollo de software: eXtreme Programming (XP). Valencia: España.
+Lightstone, S., Teorey, T., & Nadeau, T. (2021). Database Modeling and Design. San Francisco: Morgan Kaufmann.
+Maldonado Reyes, F. B., & Álvarez Ochoa, R. I. (2023). Metodología de la investigación: de la teoría a la práctica. Quito-Ecuador: Grupo Compás.
+Mannino, M. (2021). Database Design, Application Development, and Administration. Chicago: Chicago Business Press.
+Mannino, M. (2021). Database Design, Application Development, and Administration. Chicago: Chicago Business Press.
+Marcotte, E. (2020). Responsive Web Design. Nueva York: A Book Apart.
+MARIBEL DEL CARMEN, S. T. (2021). TRABAJO PREVIO A LA OBTENCIÓN DEL TÍTULO DE MAGISTER EN ADMINISTRACIÓN DE EMPRESAS, MENCIÓN EN GESTIÓN DE PROCESOS ORGANIZACIONALES. Santo Domingo: UNIVERSIDAD UTE.
+Meloni, J. (2022). HTML, CSS, and JavaScript All in One. Nueva York: Sams Publishing.
+Metropolitana), U. (. (2020). Introducción al desarrollo de software. Ciudad de México: Editorial: UAM.
+Meyer, E. (2021). Cascading Style Sheets: The Definitive Guide. Sebastopol, CA: O'Reilly Media.
+Microsoft. (2023). Visual Studio Code Documentation Manual. Redmond, WA: Microsoft Press.
+Milani, M., & West, D. (2022). High Performance MySQL Architectures. Londres: Packt Publishing.
+Nguyen, L. (2021). Modern Local Web Development Environments. Hanói: TechPress Publications.
+Nixon, R. (2021). Learning PHP, MySQL & JavaScript. Sebastopol, CA: O'Reilly Media.
+Oppel, A. (2020). Databases Demystified. San Francisco: McGraw-Hill.
+Oracle. (2023). MySQL Reference Manual and Architecture Guides. Austin, TX: Oracle Press.
+Oracle. (15 de Enero de 2024). MySQL de código abierto: Ventajas y características principales. Obtenido de MySQL Official Documentation: https://www.mysql.com/why-mysql/
+Otwell, T. (2021). Laravel: The Framework for Web Artisans. Wilmington: Laravel Inc.
+Packt. (22 de Marzo de 2023). Mastering Visual Studio Code Productivity. Obtenido de Packt Hub: https://hub.packtpub.com/mastering-vs-code/
+Paco Tamo, D. (2025). APLICACIÓN WEB PARA LA ADMINISTRACIÓN DE COBROS DE LOS AFILIADOS DE LA OTB PORVENIR. Eterazama-Cochabamba-Bolivia : Instituto Tecnologico Eterazama.
+Powers, D. (2022). PHP Solutions: Dynamic Web Design Made Easy. Londres: Friends of ED.
+Pressman, R. (2021). Ingeniería de Software: Un enfoque práctico. México: McGraw-Hill.
+Pressman, R., & Maxim, B. (2021). Ingeniería de Software: Un enfoque práctico. Ciudad de México: McGraw-Hill.
+Pressman, R., & Maxim, B. (2021). Software Engineering: A Practitioner's Approach. Ciudad: Nueva York: McGraw-Hill.
+Prettyman, A. (2023). Visual MySQL Management with phpMyAdmin. Nueva York: Apress.
+ProAgile. (15 de Enero de 2022). Ventajas de Enterprise Architect. Obtenido de ProAgile Software: https://proagile.com.ar/productos/enterprise-architect/
+Quispe Chipa, J. D. (2025). Diseño de un Sistema web para mejorar la gestión de información del servicio de agua de la Municipalidad Distrital de Mollebaya, Arequipa. Arequipa: Universidad Continetal.
+Radcliffe, T. (2023). Full-Stack Development Infrastructure. Londres: Packt Publishing.
+Ramakrishnan, R., & Gehrke, J. (2021). Database Management Systems. Dubuque: McGraw-Hill.
+Ramakrishnan, R., & Gehrke, J. (2021). Database Management Systems. Dubuque: McGraw-Hill.
+Robbins, J. (2021). Learning Web Design. Sebastopol, CA: O'Reilly Media.
+Sajib, S. (2023). Advanced Laravel Web Architecture. Londres: Packt Publishing.
+Schwaber Ken, S. J. (2020). The Scrum Guide: The Definitive Guide to Scrum. Scrum Guides.
+Schwaber, K., & Sutherland, J. (2020). The Scrum Guide: The Definitive Guide to Scrum. Scrum Guides.
+Sharnoff, M. (2021). Web-Based Database Administration Tools. San Francisco: Morgan Kaufmann.
+Silberschatz, A., Korth, H., & Sudarshan, S. (2020). Database System Concepts. Nueva York: McGraw-Hill.
+Silberschatz, A., Korth, H., & Sudarshan, S. (2020). Database System Concepts. Nueva York: McGraw-Hill.
+Solarez Chico , N. L. (2023). SISTEMA WEB PARA LA ADMINISTRACIÓN DE INFORMACIÓN Y CONTROL DE LA RECAUDACIÓN DE RECURSOS DEL SUMINISTRO DE AGUA POTABLE . EL ALTO – BOLIVIA : Universidad Pública de el Alto.
+Sommerhoff, C. (2021). Modern Web Development Environments. Berlín: Springer.
+Sommerville, I. (2021). Ingeniería de Software. Madrid: Pearson.
+Sommerville, I. y. (2020). Requirements Engineering: A Good Practice Guide. Chichester: Wiley.
+Stephens, R. (2022). Beginning Database Design Solutions. Indianápolis: Wrox Press.
+Stephens, R. (2022). Beginning Database Design Solutions. Indianápolis: Wrox Press.
+Systems, S. (2022). Enterprise Architect User Guide. Creswick, Victoria: Sparx Systems Pty Ltd.
+Team, p. D. (2024). phpMyAdmin Official Documentation Manual. Ginebra: phpMyAdmin Project.
+Ullman, L. (2020). PHP and MySQL for Dynamic Web Sites. Berkeley, CA: Peachpit Press.
+Valenzuela, A. (2023). Arquitecturas de Software Modernas. Madrid: Alfaomega.
+Vanegas Calderón, C. A., Villarraga, Y. V., & Zapata Sotto, B. A. (2022). Estudio de Afiliados Para Diseñar Estrategias de Crecimiento en la Fundación Dignidad por los Héroes de Colombia (FUNDIHECO). Universidad Cooperativa de Colombia (UCC): Bogotá, Colombia.
+Weisfeld, M. (2022). The Object-Oriented Thought Process. Boston: Addison-Wesley.
+You, E. (2020). Vue.js Up and Running. Pekín: O'Reilly Media.
+ANEXOS
+ANEXO 1: Entrevista al Personal Administrativo de la Asociación de agua potable y alcantarillado Isinuta
+Datos Generales
+Institución: Asociación de Agua Potable y Alcantarillado IsinutaÁrea: AdministraciónEntrevistado: Personal administrativoLugar: Isinuta – CochabambaFecha: Entrevistador: Javier Mercado Huerta
+Objetivo de la entrevista
+Recopilar información sobre los procesos administrativos actuales, dificultades y necesidades relacionadas con la gestión de afiliados, pagos, multas y reportes administrativos de la institución.
+¿Qué actividades realiza diariamente el área administrativa?Se realiza el registro de afiliados, cobro de pagos mensuales, control de multas, elaboración de recibos, actualización de datos y elaboración de reportes administrativos.
+¿Qué herramientas utilizan actualmente para registrar la información?Se utilizan cuadernos, recibos manuales, hojas de Excel y un sistema informático de escritorio.
+¿Qué dificultades existen con el sistema actual?El sistema no cubre todas las necesidades administrativas y parte de la información debe registrarse manualmente, lo que provoca duplicidad de datos y pérdida de tiempo.
+¿Qué problemas ocasiona el uso de cuadernos y hojas de Excel?Existe riesgo de pérdida o deterioro de información, errores en los registros y demora al momento de buscar datos o elaborar reportes.
+¿Cómo se realiza el control de pagos y multas?Los pagos se registran manualmente y luego se ingresan al sistema. Las multas se calculan según el tiempo de retraso del afiliado.
+¿Cómo se elaboran los reportes administrativos?Se revisan los cuadernos, recibos y registros del sistema para consolidar la información manualmente.
+¿Considera importante implementar un sistema web? ¿Por qué?Sí, porque permitiría centralizar toda la información, agilizar los procesos administrativos y acceder a los datos en tiempo real.
+¿Qué beneficios espera obtener con el nuevo sistema?Mayor rapidez en el registro de información, mejor control de pagos y afiliados, reducción de errores y generación automática de reporte.
+Anexo 1. Reporte detalle de pagos de afiliados que se realizaron su cancelación respectiva del consumo, el cual enseña la cantidad de recaudación de los cobros.
+[IMG:media/image41.jpg]
+Anexo 2. Reporte detalle de pagos  de los afiliados
+[IMG:media/image42.jpg]
+Anexo 3. Recibo egreso se realiza la cancelación manual de los gastos realizados [IMG:media/image43.jpg]
+Anexo 4. Recibo de pagos [IMG:media/image44.jpg]
+Anexo 5. Recibo de caja el total de pago que realizo el afiliado
+[IMG:media/image45.jpg]
+Anexo 6. Estantería de archivos donde se guardan los documentos de cada afiliado por lotes otb o sindicatos [IMG:media/image46.jpg]
+Anexo 7. Se muestra todas las faltas que se debe cada afiliado [IMG:media/image47.jpg]
+Anexo 14. Software siscocap que se usa para la gestión y administración de los afiliados y servicios de la institución
+[IMG:media/image48.jpg,media/image49.jpg]
+[IMG:media/image50.jpg,media/image51.jpg]
+[IMG:media/image49.jpg]
+[IMG:media/image52.jpg]

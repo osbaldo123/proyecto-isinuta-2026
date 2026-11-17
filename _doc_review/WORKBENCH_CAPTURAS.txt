@@ -1,0 +1,51 @@
+INSTRUCCIONES - MySQL Workbench (SIN afectar Laragon / tu sistema)
+================================================================
+
+Ya está creada una base NUEVA solo para capturas del documento:
+
+  Nombre BD:  db_isinuta_documento
+  Host:       127.0.0.1
+  Puerto:     3306
+  Usuario:    root
+  Contraseña: (vacía)
+
+Tu sistema Laragon sigue usando (NO se tocó):
+
+  db_agua_potable_isinuta   ← 525 afiliados y todos tus datos intactos
+
+
+CÓMO CONECTAR EN WORKBENCH
+--------------------------
+1. Abre MySQL Workbench (la pantalla de conexiones).
+2. Clic en el botón + (al lado de "MySQL Connections").
+3. Rellena:
+   - Connection Name: Isinuta DOCUMENTO (capturas)
+   - Hostname: 127.0.0.1
+   - Port: 3306
+   - Username: root
+   - Password: vacío (Store in Vault si lo pide)
+4. Test Connection → OK → OK.
+5. Doble clic en esa conexión.
+
+
+PARA LA FOTO DEL ESQUEMA / DIAGRAMA
+-----------------------------------
+Opción A (recomendada - diagrama EER):
+  Database → Reverse Engineer…
+  → Next → elige SOLO "db_isinuta_documento"
+  → Next → selecciona las tablas → Execute → Finish
+  → Te genera el diagrama para capturar.
+
+Opción B (lista de tablas):
+  En SCHEMAS (izquierda) abre db_isinuta_documento → Tables
+  y captura esa vista.
+
+
+IMPORTANTE
+----------
+- NO borres ni abras para “limpiar” db_agua_potable_isinuta.
+- NO cambies el archivo .env del proyecto.
+- db_isinuta_documento está VACÍA (solo estructura): es normal.
+- Si Laragon estaba apagado, enciende MySQL desde Laragon antes
+  de conectar Workbench (es el mismo servidor 127.0.0.1:3306,
+  pero con otra base aparte).
