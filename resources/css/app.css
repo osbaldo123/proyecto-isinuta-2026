@@ -1,0 +1,535 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#app {
+    min-width: 0;
+}
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+        --primary: 0 0% 9%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 92.1%;
+        --secondary-foreground: 0 0% 9%;
+        --muted: 0 0% 96.1%;
+        --muted-foreground: 0 0% 45.1%;
+        --accent: 0 0% 96.1%;
+        --accent-foreground: 0 0% 9%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 92.8%;
+        --input: 0 0% 89.8%;
+        --ring: 0 0% 3.9%;
+        --chart-1: 12 76% 61%;
+        --chart-2: 173 58% 39%;
+        --chart-3: 197 37% 24%;
+        --chart-4: 43 74% 66%;
+        --chart-5: 27 87% 67%;
+        --radius: 0.5rem;
+        --sidebar-background: 222 47% 11%;
+        --sidebar-foreground: 210 40% 98%;
+        --sidebar-primary: 189 94% 43%;
+        --sidebar-primary-foreground: 0 0% 100%;
+        --sidebar-accent: 189 94% 35%;
+        --sidebar-accent-foreground: 0 0% 100%;
+        --sidebar-border: 199 89% 20%;
+        --sidebar-ring: 189 94% 43%;
+    }
+
+    .dark {
+        --background: 0 0% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 0 0% 3.9%;
+        --card-foreground: 0 0% 98%;
+        --popover: 0 0% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 0 0% 9%;
+        --secondary: 0 0% 14.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 0 0% 6.9%;
+        --muted-foreground: 0 0% 63.9%;
+        --accent: 0 0% 14.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 14.9%;
+        --input: 0 0% 14.9%;
+        --ring: 0 0% 83.1%;
+        --chart-1: 220 70% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
+        --sidebar-background: 222 47% 7%;
+        --sidebar-foreground: 0 0% 98%;
+        --sidebar-primary: 189 94% 43%;
+        --sidebar-primary-foreground: 0 0% 100%;
+        --sidebar-accent: 189 94% 35%;
+        --sidebar-accent-foreground: 0 0% 100%;
+        --sidebar-border: 217 33% 17%;
+        --sidebar-ring: 189 94% 43%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+
+    /* Controles nativos: contraste según tema.
+       (Esta regla tiene alta especificidad por los :not(); por eso el color
+       debe definirse también en .dark, o el texto queda negro sobre fondo oscuro.) */
+    input:not([type='checkbox']):not([type='radio']):not([type='submit']):not([type='button']):not([type='reset']):not([type='image']):not([type='range']):not([type='file']):not([type='hidden']),
+    select,
+    textarea {
+        color: #0f172a;
+        caret-color: #0f172a;
+        color-scheme: light;
+    }
+
+    .dark input:not([type='checkbox']):not([type='radio']):not([type='submit']):not([type='button']):not([type='reset']):not([type='image']):not([type='range']):not([type='file']):not([type='hidden']),
+    .dark select,
+    .dark textarea {
+        color: #f8fafc;
+        caret-color: #f8fafc;
+        color-scheme: dark;
+    }
+
+    select {
+        padding-right: 2.5rem;
+    }
+
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type='number'] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+
+    select option {
+        color: #0f172a;
+        background-color: #ffffff;
+    }
+
+    .dark select option {
+        color: #f8fafc;
+        background-color: #0f172a;
+    }
+
+    /* Autocompletado del navegador */
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus {
+        -webkit-text-fill-color: #0f172a;
+        caret-color: #0f172a;
+        transition: background-color 99999s ease-in-out 0s;
+    }
+
+    .dark input:-webkit-autofill,
+    .dark input:-webkit-autofill:hover,
+    .dark input:-webkit-autofill:focus {
+        -webkit-text-fill-color: #f8fafc;
+        caret-color: #f8fafc;
+    }
+
+    /* Quitar flechas de inputs numéricos */
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type='number'] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+}
+
+@layer utilities {
+    /*
+     * Escala fija del área de trabajo (Panel de referencia).
+     * Tipografía y espacios iguales para Presidente y Secretaria.
+     * El menú lateral NO usa esta clase y conserva su tamaño.
+     * No subir/bajar este valor sin alinear de nuevo todo el sistema.
+     */
+    .isinuta-content-compact {
+        --isinuta-content-zoom: 0.85;
+        zoom: var(--isinuta-content-zoom);
+    }
+
+    /* Brillo del menú: hover suave; brillo intenso solo en el ítem activo.
+       (No usar el atajo `background` en .dark: resetea background-size y apaga el glint.) */
+    .isinuta-nav-item {
+        isolation: isolate;
+        transition:
+            background-color 0.2s ease,
+            background-image 0.2s ease,
+            box-shadow 0.2s ease,
+            color 0.2s ease,
+            transform 0.15s ease;
+    }
+
+    /* Hover / foco sin clic: transparente pero notable (no igual al activo) */
+    .isinuta-nav-item:hover:not([data-active='true']),
+    .isinuta-nav-item:focus-visible:not([data-active='true']),
+    .dark .isinuta-nav-item:hover:not([data-active='true']),
+    .dark .isinuta-nav-item:focus-visible:not([data-active='true']) {
+        background-color: rgba(34, 211, 238, 0.12) !important;
+        background-image: none !important;
+        color: #e0f2fe !important;
+        box-shadow:
+            0 0 0 1px rgba(34, 211, 238, 0.35),
+            0 0 12px rgba(34, 211, 238, 0.18) !important;
+    }
+
+    /* Activo (página actual): brillo completo — Blanco y Oscuro iguales */
+    .isinuta-nav-item[data-active='true'],
+    .dark .isinuta-nav-item[data-active='true'] {
+        background-color: #0891b2 !important;
+        background-image: linear-gradient(180deg, #22d3ee 0%, #0891b2 48%, #0e7490 100%) !important;
+        color: #ffffff !important;
+        font-weight: 600;
+        box-shadow:
+            0 0 0 1px rgba(165, 243, 252, 0.9),
+            0 0 20px rgba(34, 211, 238, 0.75),
+            0 0 36px rgba(6, 182, 212, 0.45),
+            inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
+    }
+
+    .isinuta-nav-item:active:not([data-active='true']),
+    .dark .isinuta-nav-item:active:not([data-active='true']) {
+        transform: scale(0.98);
+        background-color: rgba(34, 211, 238, 0.22) !important;
+        background-image: none !important;
+    }
+
+    .isinuta-nav-shine {
+        pointer-events: none;
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        overflow: hidden;
+        border-radius: inherit;
+        opacity: 0;
+        background-image: linear-gradient(
+            100deg,
+            transparent 0%,
+            transparent 38%,
+            rgba(255, 255, 255, 0.15) 45%,
+            rgba(255, 255, 255, 0.85) 50%,
+            rgba(255, 255, 255, 0.15) 55%,
+            transparent 62%,
+            transparent 100%
+        );
+        background-size: 250% 140%;
+        background-repeat: no-repeat;
+        background-position: 200% 50%;
+        transition: opacity 0.2s ease;
+    }
+
+    /* Destello solo en el ítem activo, no al pasar el cursor */
+    .isinuta-nav-item[data-active='true'] .isinuta-nav-shine,
+    .dark .isinuta-nav-item[data-active='true'] .isinuta-nav-shine {
+        opacity: 1;
+        animation: isinuta-nav-flash 1.25s ease-out forwards;
+    }
+
+    @keyframes isinuta-nav-flash {
+        from {
+            background-position: 200% 50%;
+        }
+        to {
+            background-position: -80% 50%;
+        }
+    }
+}
+
+/*
+ * ─────────────────────────────────────────────────────────────
+ * Diseño responsivo (celular / tablet / escritorio)
+ * ─────────────────────────────────────────────────────────────
+ * Puntos de corte (Tailwind): sm 640px · md 768px · lg 1024px · xl 1280px.
+ */
+
+/* En celular la escala compacta (0.85) deja letras de ~12px: se usa tamaño normal. */
+@media screen and (max-width: 767px) {
+    .isinuta-content-compact {
+        --isinuta-content-zoom: 1;
+        min-width: 0;
+        overflow-x: hidden;
+    }
+
+    /* Evita el zoom automático de iOS al tocar un campo (requiere ≥16px). */
+    .isinuta-content-compact input:not([type='checkbox']):not([type='radio']),
+    .isinuta-content-compact select,
+    .isinuta-content-compact textarea {
+        font-size: 16px;
+    }
+
+    /* Botones de acción en listados: área táctil cómoda sin romper escritorio. */
+    .isinuta-content-compact table.tabla-responsiva td[data-celda-acciones] a,
+    .isinuta-content-compact table.tabla-responsiva td[data-celda-acciones] button {
+        min-height: 2.25rem;
+    }
+}
+
+/* Tablet: el contenido no se desborda al abrir el menú. */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .isinuta-content-compact {
+        min-width: 0;
+    }
+}
+
+/* Imágenes, videos y gráficos nunca más anchos que la pantalla. */
+img,
+video,
+canvas {
+    max-width: 100%;
+}
+
+/*
+ * Tablas responsivas (directiva v-tabla-responsiva).
+ * En celular cada fila se muestra como tarjeta con "Etiqueta: valor".
+ */
+@media screen and (max-width: 767px) {
+    table.tabla-responsiva {
+        min-width: 0 !important;
+        width: 100% !important;
+        table-layout: auto !important;
+        border-collapse: collapse;
+    }
+
+    table.tabla-responsiva > thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+    }
+
+    table.tabla-responsiva > tbody,
+    table.tabla-responsiva > tfoot {
+        display: block;
+        width: 100%;
+    }
+
+    table.tabla-responsiva > tbody > tr,
+    table.tabla-responsiva > tfoot > tr {
+        display: flex;
+        flex-direction: column;
+        gap: 0.125rem;
+        width: 100%;
+        padding: 0.875rem 1rem;
+        border-bottom: 1px solid rgb(226 232 240);
+    }
+
+    .dark table.tabla-responsiva > tbody > tr,
+    .dark table.tabla-responsiva > tfoot > tr {
+        border-bottom-color: rgb(30 41 59);
+    }
+
+    /* Fila que continúa un grupo (p. ej. otro lote del mismo afiliado). */
+    table.tabla-responsiva > tbody > tr[data-fila-continua] {
+        margin-top: -0.375rem;
+        padding-top: 0.25rem;
+        padding-left: 1.75rem;
+        border-left: 3px solid rgb(34 211 238 / 0.45);
+    }
+
+    table.tabla-responsiva > tbody > tr > td,
+    table.tabla-responsiva > tbody > tr > th,
+    table.tabla-responsiva > tfoot > tr > td,
+    table.tabla-responsiva > tfoot > tr > th {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 0.75rem;
+        width: 100% !important;
+        max-width: none !important;
+        min-width: 0 !important;
+        padding: 0.3rem 0 !important;
+        border: 0 !important;
+        text-align: right;
+        white-space: normal !important;
+        overflow-wrap: anywhere;
+    }
+
+    /* Etiqueta (encabezado de la columna) a la izquierda. */
+    table.tabla-responsiva td[data-label]:not([data-label=''])::before {
+        content: attr(data-label);
+        flex: 0 0 auto;
+        max-width: 45%;
+        padding-top: 0.1rem;
+        text-align: left;
+        font-size: 0.6875rem;
+        font-weight: 600;
+        line-height: 1.3;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: rgb(100 116 139);
+    }
+
+    .dark table.tabla-responsiva td[data-label]:not([data-label=''])::before {
+        color: rgb(148 163 184);
+    }
+
+    /* El contenido de la celda queda alineado a la derecha y puede envolver. */
+    table.tabla-responsiva td[data-label]:not([data-label='']) > * {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    /* Primera columna = dato principal: más grande y sin etiqueta. */
+    table.tabla-responsiva > tbody > tr:not([data-fila-continua]) > td:first-child:not([data-celda-completa]) {
+        justify-content: flex-start;
+        text-align: left;
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+
+    table.tabla-responsiva > tbody > tr:not([data-fila-continua]) > td:first-child::before {
+        display: none;
+    }
+
+    /* Celdas sin etiqueta (mensajes, checkboxes, etc.). */
+    table.tabla-responsiva td[data-label=''],
+    table.tabla-responsiva td[data-celda-completa] {
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Columna de acciones: al pie de la tarjeta, botones cómodos para el dedo. */
+    table.tabla-responsiva td[data-celda-acciones] {
+        justify-content: flex-end;
+        margin-top: 0.375rem;
+        padding-top: 0.625rem !important;
+        border-top: 1px dashed rgb(226 232 240) !important;
+    }
+
+    .dark table.tabla-responsiva td[data-celda-acciones] {
+        border-top-color: rgb(51 65 85) !important;
+    }
+
+    table.tabla-responsiva td[data-celda-acciones]::before {
+        display: none;
+    }
+
+    table.tabla-responsiva td[data-celda-acciones] > * {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    /* El contenedor ya no necesita desplazarse de lado. */
+    .overflow-x-auto:has(> table.tabla-responsiva) {
+        overflow-x: visible;
+    }
+}
+
+/*
+ * Impresión de recibos (1, 4, 10 o N).
+ * Aplica en Show e ImprimirCobro cuando existe #area-impresion.
+ * Sin esto, zoom/overflow del panel hacen que Chrome solo imprima 1–2 hojas.
+ */
+@media print {
+    html,
+    body {
+        height: auto !important;
+        overflow: visible !important;
+        background: #fff !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    main,
+    .group\/sidebar-wrapper,
+    .isinuta-content-compact {
+        height: auto !important;
+        min-height: 0 !important;
+        overflow: visible !important;
+        zoom: 1 !important;
+        transform: none !important;
+    }
+
+    body:has(#area-impresion) {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    body:has(#area-impresion) aside,
+    body:has(#area-impresion) nav,
+    body:has(#area-impresion) [data-sidebar],
+    body:has(#area-impresion) [data-side],
+    body:has(#area-impresion) [data-slot='sidebar'],
+    body:has(#area-impresion) [data-slot='sidebar-gap'],
+    body:has(#area-impresion) .print\:hidden {
+        display: none !important;
+    }
+
+    body:has(#area-impresion) * {
+        visibility: hidden !important;
+        box-shadow: none !important;
+    }
+
+    body:has(#area-impresion) #area-impresion,
+    body:has(#area-impresion) #area-impresion * {
+        visibility: visible !important;
+    }
+
+    body:has(#area-impresion) #area-impresion {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: visible !important;
+        transform: none !important;
+        zoom: 1 !important;
+        display: block !important;
+    }
+
+    body:has(#area-impresion) .recibo-pagina {
+        display: block !important;
+        width: 100% !important;
+        overflow: visible !important;
+        break-after: page;
+        page-break-after: always;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    body:has(#area-impresion) .recibo-pagina:last-child {
+        break-after: auto;
+        page-break-after: auto;
+    }
+
+    body:has(#area-impresion) .recibo-impreso {
+        overflow: visible !important;
+    }
+}
